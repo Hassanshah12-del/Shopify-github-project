@@ -129,7 +129,7 @@
         render 'header-search', input_id: 'Search-In-Modal-1'
       endif
     -%}
-
+<div class="logo-menu">
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
@@ -169,6 +169,7 @@
         endif
       endif
     %}
+</div>    
 
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
