@@ -24,6 +24,9 @@
         },
         "shadow": {
           "label": "Sombra"
+        },
+        "test": {
+          "label": "Sombra"
         }
       }
     },
