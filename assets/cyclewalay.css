@@ -5265,6 +5265,7 @@ body, html {
   font-family: "metropolis-regular";
   font-size: 14px;
   color: #333;
+  line-height: 1.42857143;
 }
 
 footer.page-footer {
