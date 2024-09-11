@@ -5279,3 +5279,13 @@ footer.page-footer {
   margin-top: auto;
   padding-bottom: 25px;
 }
+
+p.announcement-bar__message.h5 {
+  font-size: 14px;
+  min-height: auto;
+  font-family: 'metropolis-medium';
+}
+
+.shopify-section.announcement-bar-section {
+  background: #fe9b30;
+}
