@@ -620,6 +620,9 @@
   
   .page-footer .footer.content ul {
     padding-right: unset !important;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
   
   .page-footer li.des-bar {
@@ -2640,9 +2643,12 @@
   
   .page-footer .cycle-footer-li ul li a{
     color: #333;
+    text-decoration: none;
   }
   
-  
+  section.placeholder-section .placeholder {
+    background-color: transparent;
+  }
   
   ul.header.links a.regclass {
       display: none !important;
@@ -3433,6 +3439,7 @@
   .page-footer p.li-orange{
     font-weight: bold;
     font-size: 16px;
+    margin: 0;
   }
   
   @media screen and (max-width: 767px){
@@ -5201,4 +5208,11 @@
 
 body, html {
   font-family: "metropolis-regular";
+  font-size: 14px;
+}
+
+footer.page-footer {
+  background: #f4f4f4;
+  margin-top: auto;
+  padding-bottom: 25px;
 }
