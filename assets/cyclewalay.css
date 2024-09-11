@@ -5284,8 +5284,9 @@ p.announcement-bar__message.h5 {
   font-size: 14px;
   min-height: auto;
   font-family: 'metropolis-medium';
+  padding: 11.41px 0px;
 }
 
-.shopify-section.announcement-bar-section {
-  background: #fe9b30;
+.shopify-section.announcement-bar-section .utility-bar {
+  background-color: #fe9b30;
 }
