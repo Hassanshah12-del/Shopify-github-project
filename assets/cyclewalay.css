@@ -1727,6 +1727,11 @@
       padding-right: unset !important;
     }
   }
+
+  footer.page-footer .footer.content{
+    margin: 0 auto;
+    padding-top: 20px;
+  }
   .catalog-product_compare-index .page-header .header.panel,
     .catalog-product-view .page-header .header.panel,
   .catalog-category-view .page-header .header.panel {
@@ -5259,6 +5264,7 @@ header.header--top-left {
 body, html {
   font-family: "metropolis-regular";
   font-size: 14px;
+  color: #333;
 }
 
 footer.page-footer {
