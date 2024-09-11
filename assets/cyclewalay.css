@@ -2,6 +2,11 @@
     --yellow-color: #FE9B30;
     --black-color: #000000; 
   }
+
+  :host, :root {
+    --rem: 10;
+}
+
   
   
   .header-main-top-content-block {
@@ -1155,6 +1160,7 @@
   
   .top-head-extra p.call-no {
     border-right: unset;
+    padding-left: 0;
   }
   
   .top-head-extra i.fa.fa-angle-down.red {
