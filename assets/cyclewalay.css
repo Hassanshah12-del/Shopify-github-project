@@ -5197,3 +5197,12 @@
   display: none;
 }
 
+@font-face {
+  font-family: "metropolis-regular";
+  src: url({{'Metropolis-Regular.woff2' | asset_url}}) format("woff2");
+}
+
+
+body, html {
+  font-family: "metropolis-regular";
+}
