@@ -428,7 +428,7 @@
     padding-bottom: 0px !important;
   }
   
-  body.cms-home.cms-index-index .page-main {
+  body.cms-index-index .page-main {
     max-width: unset !important;
    padding:0px !important; 
   }
@@ -722,10 +722,10 @@
     background-size: cover;
     height: 800px; */
   }
-  .cms-home .banner-image-home{
+   .banner-image-home{
     position: relative;
   }
-  .cms-home .banner-image-home img {
+   .banner-image-home img {
     height: 100%;
     width: 100%;
     max-height: 770px;
@@ -1991,7 +1991,7 @@
   }
   
   @media screen and (max-width: 767px) {
-    .cms-home .banner-image-home img {
+     .banner-image-home img {
       height: 100%;
       width: 100%;
       max-height: 600px;
@@ -2716,7 +2716,7 @@
   
   
   
-  .cms-home button.action.tocart.primary span:hover:before {
+   button.action.tocart.primary span:hover:before {
     color: #000000 !important;
     background-color: #FE9B30 !important;
     border: 1px solid #000000 !important;
@@ -2729,7 +2729,7 @@
   
   
   
-  .cms-home .action.towishlist:hover:before{
+   .action.towishlist:hover:before{
       color: #FE9B30;
       color: #000000 !important;
       background-color: #FE9B30 !important;
@@ -3609,7 +3609,7 @@
   
   
   /*custom design of search on banner on home page*/
-  .cms-home .control .input-text {
+   .control .input-text {
         border: 1px solid #ee6b0a;
         color: var(--black-color);
         border-radius: 5px;
@@ -3620,7 +3620,7 @@
       
   }
   @media screen and (max-width: 1041px) {
-    .cms-home .banner-image-home img {
+     .banner-image-home img {
       height: 100%;
       width: 100%;
       min-height: 692px;
@@ -4596,7 +4596,7 @@
     }
     }
     @media screen and (max-width: 425px){
-      .cms-home .banner-image-home img{
+       .banner-image-home img{
         height: 100%;
         width: 100%;
         min-height: 575px;

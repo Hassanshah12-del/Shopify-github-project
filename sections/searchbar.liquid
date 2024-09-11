@@ -1,7 +1,19 @@
-        <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-          <div class="field">
+   <div class="banner-image-home">
+    <div class="parent-main-image">
+       <section class="right-product">
+        <form id="search_mini_form" action="{{ routes.search_url }}" method="get" role="search" class="form minisearch  form search advanced">
+         <div class="inner-right-product owncontainer">
+            <div class="find-your">
+                        <h1> CycleWalay</h1>
+                    </div>        
+            <div class="right-your">
+                        <h1>Your Ultimate Destination for High-Quality Bicycles and Repair Services at your Doorstep! </h1>
+                    </div>
+        </div>
+         <fieldset class="fieldset row ">
+          <div class="control">
             <input
-              class="search__input field__input"
+              class="input-text"
               id="{{ input_id }}"
               type="search"
               name="q"
@@ -22,22 +34,15 @@
             >
             <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
             <input type="hidden" name="options[prefix]" value="last">
-            <button
-              type="reset"
-              class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
-              aria-label="{{ 'general.search.reset' | t }}"
-            >
-              <span class="svg-wrapper">
-                {{- 'icon-reset.svg' | inline_asset_content -}}
+            <div class="actions">
+            <button class="action search">
+              <span>
+              Search
               </span>
             </button>
-            <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-              <span class="svg-wrapper">
-                {{- 'icon-search.svg' | inline_asset_content -}}
-              </span>
-            </button>
+             </div>
           </div>
-
+         </fieldset>
           {%- if settings.predictive_search_enabled -%}
             <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
               {%- render 'loading-spinner', class: 'predictive-search__loading-state' -%}
@@ -46,6 +51,9 @@
             <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
           {%- endif -%}
         </form>
+        </section>
+        </div>
+         </div>
  {% schema %}
 {
   "name": "searchbar",
