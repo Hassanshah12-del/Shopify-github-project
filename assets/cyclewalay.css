@@ -3653,6 +3653,7 @@
     justify-content: left;
     padding-top: 50px;
     padding-left: 0px;
+    border: 0;
   }
   
   .cms-index-index .right-product .control {
@@ -5289,4 +5290,10 @@ p.announcement-bar__message.h5 {
 
 .shopify-section.announcement-bar-section .utility-bar {
   background-color: #fe9b30;
+}
+
+.right-product #search_mini_form fieldset.fieldset.row .control{
+  display: flex;
+  width: 100%;
+  max-width: 665px;
 }
