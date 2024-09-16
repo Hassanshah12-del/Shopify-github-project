@@ -15,35 +15,22 @@
   }
 {%- endstyle -%}
 
-<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
-  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+<section class="news-letter {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
           {% render block %}
-        {%- when 'heading' -%}
-          <h2
-            class="inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-            {{ block.shopify_attributes }}
-            {% if settings.animations_reveal_on_scroll %}
-              data-cascade
-              style="--animation-order: {{ forloop.index }};"
-            {% endif %}
-          >
-            {{ block.settings.heading }}
-          </h2>
-        {%- when 'paragraph' -%}
-          <div
-            class="newsletter__subheading rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-            {{ block.shopify_attributes }}
-            {% if settings.animations_reveal_on_scroll %}
-              data-cascade
-              style="--animation-order: {{ forloop.index }};"
-            {% endif %}
-          >
-            {{ block.settings.text }}
-          </div>
-        {%- when 'email_form' -%}
+       <div class="owncontainer">
+<div class="row news-pad">
+<div class="col-lg-3 col-md-4">
+<div class="news-head">
+<h1 class="stay">Stay</h1>
+<h1 class="connected">Connected</h1>
+<p>Subscribe to Our Newsletter</p>
+</div>
+</div>
+<div class="col-lg-9 col-md-8">
+     {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }}>
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
@@ -115,10 +102,14 @@
               {%- endif -%}
             {% endform %}
           </div>
+</div>
+</div>
+</div>
+       
+   
       {%- endcase -%}
     {%- endfor -%}
-  </div>
-</div>
+</section>
 
 {% schema %}
 {
