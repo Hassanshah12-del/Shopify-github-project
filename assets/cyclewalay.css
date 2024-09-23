@@ -5294,3 +5294,7 @@ p.announcement-bar__message.h5 {
   max-width: 665px;
 }
 
+.news-head {
+  text-align: left;
+}
+
