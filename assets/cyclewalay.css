@@ -1025,7 +1025,7 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
   
-  section.news-letter {
+  .news-letter {
     background-image: url('img8.png');
     background-position: center center;
     background-size: cover;
