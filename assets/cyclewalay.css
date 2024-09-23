@@ -5298,3 +5298,13 @@ p.announcement-bar__message.h5 {
   text-align: left;
 }
 
+.block.newsletter .form.subscribe {
+  display: table;
+  width: 100%;
+}
+
+.block.newsletter .actions {
+  display: table-cell;
+  vertical-align: top;
+  width: 1%;
+}
