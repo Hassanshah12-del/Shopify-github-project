@@ -17,22 +17,21 @@
 
 <section class="news-letter newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
   <div class="owncontainer">
-    {%- for block in section.blocks -%}
-      {%- case block.type -%}
-        {%- when '@app' -%}
-          {% render block %}
-
-<div class="row news-pad">
-<div class="col-lg-3 col-md-4">
-<div class="news-head">
-<h1 class="stay">Stay</h1>
-<h1 class="connected">Connected</h1>
-<p>Subscribe to Our Newsletter</p>
-</div>
-</div>
+  <div class="row news-pad">  
+      <div class="col-lg-3 col-md-4">
+            <div class="news-head">
+                <h1 class="stay">Stay</h1>
+                <h1 class="connected">Connected</h1>
+                <p>Subscribe to Our Newsletter</p>
+            </div>
+      </div>
 <div class="col-lg-9 col-md-8"><div class="block newsletter">
     
     <div class="content">
+        {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when '@app' -%}
+          {% render block %}
              {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }}>
             {% form 'customer', class: 'newsletter-form' %}
@@ -104,14 +103,13 @@
                 </h3>
               {%- endif -%}
             {% endform %}
+                  {%- endcase -%}
+    {%- endfor -%}
           </div>
     </div>
 </div>
 </div>
 </div>
-   
-      {%- endcase -%}
-    {%- endfor -%}
   </div>
 </section>
 
