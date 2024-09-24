@@ -5472,3 +5472,27 @@ ul#product-grid .card-information .price {
   height: 22px;
   width: 22px;
 }
+
+.header__icon--cart:before {
+  color: #333333;
+  font-size: 20px !important;
+  font-family: 'FontAwesome';
+  content: '\f07a' !important;
+}
+
+.header__icon--cart .cart-count-bubble {
+  background: #FE9B30 !important;
+  position: absolute;
+  left: 36px;
+  top: 7px;
+  display: block;
+  z-index: 999;
+  border-radius: 2px;
+  width: 18px;
+  text-shadow: 0 0 7px #000;
+}
+
+.header__icon--cart {
+  text-decoration: none;
+}
+
