@@ -5384,18 +5384,22 @@ h3.card__heading a {
 }
 
 button.quick-add__submit span:first-child:before {
-  font-family: 'FontAwesome';
-  content: '\f07a' !important;
+  font-family: FontAwesome;
+  content: "\f07a" !important;
   color: #000;
   border: 1px solid;
   font-size: 23px;
   height: 50px;
-  width: 50px;
+  width: 100%;
   line-height: 2;
   display: block;
   border-radius: 100%;
   padding-right: 3px;
+  max-width: 50px;
+  margin: 0 auto;
 }
+
+
 
 .collection__title h2 {
   text-align: center;
@@ -5423,3 +5427,8 @@ button.quick-add__submit:after,
 button.quick-add__submit:before{
 content: none !important;
 }
+
+button.quick-add__submit span:first-child {
+  font-size: 0;
+}
+
