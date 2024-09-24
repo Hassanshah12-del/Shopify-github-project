@@ -5496,3 +5496,12 @@ ul#product-grid .card-information .price {
   text-decoration: none;
 }
 
+.header__icon.header__icon--account.link:before {
+  content: "\f2c0";
+  font-family: FontAwesome;
+  font-size: 20px;
+}
+
+.header__icon.header__icon--account.link {
+  text-decoration: none;
+}
