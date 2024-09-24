@@ -5288,6 +5288,7 @@ p.announcement-bar__message.h5 {
   min-height: auto;
   font-family: 'metropolis-medium';
   padding: 11.41px 0px;
+  letter-spacing: 0px;
 }
 
 .shopify-section.announcement-bar-section .utility-bar {
@@ -5434,9 +5435,31 @@ button.quick-add__submit span:first-child {
 
 button.quick-add__submit{
   border: 0 !important;
+  padding-top: 0;
 }
 
 .card-information .price {
   text-align: center;
+  line-height: 1;
+}
+
+ul#product-grid .card .card__inner .card__media {
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+ul#product-grid h3.card__heading a {
+  font-size: 14px;
+  text-align: left;
+  font-weight: 400;
+}
+ 
+ul#product-grid .card--standard>.card__content .card__information {
+  padding-top: 5px;
+}
+
+ul#product-grid .card-information .price {
+  text-align: left;
+  line-height: 1;
 }
 
