@@ -5368,3 +5368,58 @@ h1 {
 .top-head-extra p.call-no a {
   text-decoration: none;
 }
+
+h3.card__heading a {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'metropolis-regular';
+}
+
+.collection .price__regular .price-item--regular {
+  margin-right: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+button.quick-add__submit span:first-child:before {
+  font-family: 'FontAwesome';
+  content: '\f07a' !important;
+  color: #000;
+  border: 1px solid;
+  font-size: 23px;
+  height: 50px;
+  width: 50px;
+  line-height: 2;
+  display: block;
+  border-radius: 100%;
+  padding-right: 3px;
+}
+
+.collection__title h2 {
+  text-align: center;
+  font-family: "lemonmilk-bold";
+  font-size: 18px;
+  color: #333;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+
+.collection__title h2:after {
+  content: "";
+  width: 100%;
+  background: #FE9B30;
+  height: 5px;
+  display: block;
+  max-width: 90px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+
+button.quick-add__submit:after,
+button.quick-add__submit:before{
+content: none !important;
+}
