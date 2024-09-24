@@ -870,6 +870,7 @@
   }
   
   .policy-shop .policy-heading h1 {
+    font-family: "metropolis-regular";
     font-size: 16px;
     font-weight: 900;
     color: #000;
@@ -1080,6 +1081,8 @@
     margin: 0px;
     color: #fff;
     font-size: 18px;
+    outline: none;
+    box-shadow: none;
   }
   
   
@@ -5324,3 +5327,29 @@ input[type="text"], input[type="password"], input[type="url"], input[type="tel"]
   box-sizing: border-box;
 }
 
+section.policy-shop .item.last {
+    border-right: 0;
+}
+
+section.policy-shop .border-bo .item .policy-heading p {
+  font-size: 14px;
+  color: #000000;
+  max-width: 275px;
+  margin-top: 10px;
+}
+
+
+.action.primary {
+  background-image: none;
+  background: #1979c3;
+  border: 1px solid #1979c3;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  padding: 7px 15px;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
