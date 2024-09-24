@@ -1047,6 +1047,7 @@
     font-family: "lemonmilk-bold";
     font-size: 35px;
     margin: 7px 0px;
+    line-height: 1;
   }
   
   
@@ -1055,11 +1056,13 @@
     font-size: 35px;
     font-family: "lemonmilk-bold";
     margin: 7px 0px;
+    line-height: 1;
   }
   
   .news-letter .news-head p {
     color: #fff;
     font-size: 19px;
+    margin: 0;
   }
   
   .news-letter .block.newsletter .field .control:before {
@@ -5349,7 +5352,15 @@ section.policy-shop .border-bo .item .policy-heading p {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   padding: 7px 15px;
-  font-size: 1.4rem;
+  font-size: 14px;
   box-sizing: border-box;
   vertical-align: middle;
+}
+
+h1 {
+  font-weight: 300;
+  line-height: 1.1;
+  font-size: 26px;
+  margin-top: 0rem;
+  margin-bottom: 20px;
 }
