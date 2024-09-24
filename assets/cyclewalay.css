@@ -5364,3 +5364,7 @@ h1 {
   margin-top: 0rem;
   margin-bottom: 20px;
 }
+
+.top-head-extra p.call-no a {
+  text-decoration: none;
+}
