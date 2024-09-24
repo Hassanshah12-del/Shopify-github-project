@@ -5395,7 +5395,7 @@ button.quick-add__submit span:first-child:before {
   display: block;
   border-radius: 100%;
   padding-right: 3px;
-  max-width: 50px;
+  min-width: 50px;
   margin: 0 auto;
 }
 
@@ -5432,3 +5432,6 @@ button.quick-add__submit span:first-child {
   font-size: 0;
 }
 
+button.quick-add__submit{
+  border: 0 !important;
+}
