@@ -5435,3 +5435,8 @@ button.quick-add__submit span:first-child {
 button.quick-add__submit{
   border: 0 !important;
 }
+
+.card-information .price {
+  text-align: center;
+}
+
