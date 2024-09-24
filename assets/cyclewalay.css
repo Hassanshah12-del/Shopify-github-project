@@ -5463,3 +5463,12 @@ ul#product-grid .card-information .price {
   line-height: 1;
 }
 
+.page-footer span.li-pad a {
+  text-decoration: none;
+}
+
+.header__icons-outer .header__icon .icon,
+.header__icons-outer .header__icon--cart .icon {
+  height: 22px;
+  width: 22px;
+}
