@@ -5566,3 +5566,7 @@ box-shadow: 0 0 5px #fe9b30, 0 0 25px #fe9b30 !important;
       width: 98px !important;
   }
 }
+
+body .product-media-container.constrain-height.media-fit-contain {
+  width: 100%;
+}
