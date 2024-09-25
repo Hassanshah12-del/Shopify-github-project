@@ -5570,3 +5570,28 @@ box-shadow: 0 0 5px #fe9b30, 0 0 25px #fe9b30 !important;
 body .product-media-container.constrain-height.media-fit-contain {
   width: 100%;
 }
+
+ul.shopify-tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+ul.shopify-tabs > li{
+  background: none;
+  color: #333;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+ul.shopify-tabs > li.current{
+  background: #f0f0f0;
+  color: #333;
+}
+.shopify-tab-content{
+  display: none;
+  background: #f0f0f0;
+  padding: 15px;
+}
+.shopify-tab-content.current{
+  display: block;
+}
