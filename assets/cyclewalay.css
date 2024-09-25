@@ -5605,6 +5605,15 @@ ul.shopify-tabs > li.current{
 .facets-vertical .facets__summary {
   padding: 20px 15px 20px !important;
   background-color: #FE9B30;
-  color: #fff;
+  color: #fff !important;
+  font-size: 14px;
   line-height: 1.429;
+}
+
+.facets-vertical .facets__summary:hover .facets__summary-label {
+  text-decoration: none;
+}
+
+.facets-vertical .facets__summary .icon-caret {
+  right: 13px;
 }
