@@ -5509,3 +5509,34 @@ button.search__button.field__button,
 .product-form__input.product-form__quantity quantity-input.quantity input{
  font-size: 14px;
 }
+
+
+.product-form__input.product-form__quantity {
+  display: flex;
+  align-items: center;
+}
+
+.product-form__input.product-form__quantity button.product-form__submit.button {
+  width: 100%;
+  min-height: 41px;
+  background-color: #FE9B30;
+  border-radius: unset;
+  border: unset;
+  line-height: 0;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-left: 15px;
+  overflow: hidden;
+  max-width: 170px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  padding: 0;
+  min-width: 170px;
+}
+
+.product-form__input.product-form__quantity button.product-form__submit.button:after{
+  box-shadow: none;
+}
