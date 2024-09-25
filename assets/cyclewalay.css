@@ -5560,6 +5560,12 @@ box-shadow: 0 0 5px #fe9b30, 0 0 25px #fe9b30 !important;
   font-family: 'metropolis-regular';
 }
 
+.product__info-wrapper.grid__item .price__regular .price-item--regular {
+  color: #F69A35;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 0;
+}
 
 @media screen and (min-width: 900px) {
   .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
