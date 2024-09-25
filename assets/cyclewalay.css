@@ -5472,7 +5472,7 @@ ul#product-grid .card-information .price {
   left: 36px;
   top: 7px;
   display: block;
-  z-index: 999;
+  z-index: 3;
   border-radius: 2px;
   width: 18px;
   text-shadow: 0 0 7px #000;
@@ -5490,4 +5490,13 @@ ul#product-grid .card-information .price {
 
 .header__icon.header__icon--account.link {
   text-decoration: none;
+}
+
+svg.icon.icon-search {
+  color: #cf671b;
+}
+
+button.search__button.field__button,
+.modal__close-button.link {
+  border: 0 !important;
 }
