@@ -5316,20 +5316,6 @@ p.announcement-bar__message.h5 {
   width: 1%;
 }
 
-input[type="text"], input[type="password"], input[type="url"], input[type="tel"], input[type="search"], input[type="number"], input[type="datetime"], input[type="email"] {
-  background: #fff;
-  background-clip: padding-box;
-  border: 1px solid #c2c2c2;
-  border-radius: 1px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  height: 32px;
-  line-height: 1.42857143;
-  padding: 0 9px;
-  vertical-align: baseline;
-  width: 100%;
-  box-sizing: border-box;
-}
 
 section.policy-shop .item.last {
     border-right: 0;
