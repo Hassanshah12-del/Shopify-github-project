@@ -227,19 +227,11 @@ class QuantityInput extends HTMLElement {
 
   quantityUpdateUnsubscriber = undefined;
 
-  connectedCallback() {
-    this.validateQtyRules();
-    this.quantityUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.quantityUpdate, this.validateQtyRules.bind(this));
-  }
 
   disconnectedCallback() {
     if (this.quantityUpdateUnsubscriber) {
       this.quantityUpdateUnsubscriber();
     }
-  }
-
-  onInputChange(event) {
-    this.validateQtyRules();
   }
 
   onButtonClick(event) {
@@ -263,18 +255,7 @@ class QuantityInput extends HTMLElement {
     }
   }
 
-  validateQtyRules() {
-    const value = parseInt(this.input.value);
-    if (this.input.min) {
-      const buttonMinus = this.querySelector(".quantity__button[name='minus']");
-      buttonMinus.classList.toggle('disabled', parseInt(value) <= parseInt(this.input.min));
-    }
-    if (this.input.max) {
-      const max = parseInt(this.input.max);
-      const buttonPlus = this.querySelector(".quantity__button[name='plus']");
-      buttonPlus.classList.toggle('disabled', value >= max);
-    }
-  }
+
 }
 
 customElements.define('quantity-input', QuantityInput);
