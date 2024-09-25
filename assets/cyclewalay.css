@@ -5519,6 +5519,7 @@ button.search__button.field__button,
 .product-form__input.product-form__quantity button.product-form__submit.button {
   width: 100%;
   min-height: 41px;
+  margin-bottom: 0;
   background-color: #FE9B30;
   border-radius: unset;
   border: unset;
@@ -5550,4 +5551,11 @@ box-shadow: 0 0 5px #fe9b30, 0 0 25px #fe9b30 !important;
 
 .product-form__input.product-form__quantity .form__label {
   margin-bottom: 0;
+}
+
+.product__info-wrapper.grid__item .product__title h1 {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  font-family: 'metropolis-regular';
 }
