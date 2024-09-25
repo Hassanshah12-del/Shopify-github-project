@@ -728,17 +728,18 @@
 
 
 <script type="text/javascript">
-  $(document).ready(function(){
-    $('ul.shopify-tabs > li').click(function(){
-      var tab_id = $(this).attr('data-tab');
-
-      $(this).parent().find('li').removeClass('current');
-      $('.shopify-tab-content').removeClass('current');
-
-      $(this).addClass('current');
-      $("#" + tab_id).addClass('current');
+ document.addEventListener('DOMContentLoaded', function() {
+  const tabs = document.querySelectorAll('ul.shopify-tabs > li');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('.shopify-tabs > li').forEach(t => t.classList.remove('current'));
+      document.querySelectorAll('.shopify-tab-content').forEach(c => c.classList.remove('current'));
+      this.classList.add('current');
+      const tabId = this.getAttribute('data-tab');
+      document.getElementById(tabId).classList.add('current');
     });
   });
+});
 </script>
 </product-info>
 
