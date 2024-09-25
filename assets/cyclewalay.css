@@ -5495,3 +5495,7 @@ button.search__button.field__button,
 .modal__close-button.link {
   border: 0 !important;
 }
+
+.shopify-payment-button {
+  display: none;
+}
