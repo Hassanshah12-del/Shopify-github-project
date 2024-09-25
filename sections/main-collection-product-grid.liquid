@@ -217,6 +217,16 @@
     url.searchParams.set('items_per_page', this.value);
     window.location.href = url.toString();
   });
+
+  // Ensure the selected value matches the current items_per_page query parameter
+  document.addEventListener('DOMContentLoaded', function() {
+    let params = new URLSearchParams(window.location.search);
+    let itemsPerPage = params.get('items_per_page');
+    if (itemsPerPage) {
+      let selectElement = document.getElementById('ItemsPerPage');
+      selectElement.value = itemsPerPage;
+    }
+  });
 </script>
 
 {% schema %}
