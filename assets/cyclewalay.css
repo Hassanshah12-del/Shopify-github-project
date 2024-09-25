@@ -5601,3 +5601,10 @@ ul.shopify-tabs > li.current{
 .shopify-tab-content.current{
   display: block;
 }
+
+.facets-vertical .facets__summary {
+  padding: 20px 15px 20px !important;
+  background-color: #FE9B30;
+  color: #fff;
+  line-height: 1.429;
+}
