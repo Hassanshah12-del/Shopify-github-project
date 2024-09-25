@@ -5547,3 +5547,7 @@ transition: 2s;
 color: #fe9b30 !important;
 box-shadow: 0 0 5px #fe9b30, 0 0 25px #fe9b30 !important;
 }
+
+.product-form__input.product-form__quantity .form__label {
+  margin-bottom: 0;
+}
