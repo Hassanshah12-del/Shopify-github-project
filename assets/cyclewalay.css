@@ -5559,3 +5559,10 @@ box-shadow: 0 0 5px #fe9b30, 0 0 25px #fe9b30 !important;
   font-weight: bold;
   font-family: 'metropolis-regular';
 }
+
+
+@media screen and (min-width: 900px) {
+  .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
+      width: 98px;
+  }
+}
