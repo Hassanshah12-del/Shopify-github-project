@@ -2915,14 +2915,8 @@
       color: #fff;
       background-color: #FE9B30;
       box-shadow: unset !important;
-      border: 1px solid #FE9B30 !important;
+      border: 1px solid #FE9B30;
   }
-  
-  button:hover {
-    background-color: #fff !important;
-    color: #FE9B30 !important;
-  }
-  
   
   
   @media screen and (min-width: 768px){
