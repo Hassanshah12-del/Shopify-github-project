@@ -5499,3 +5499,13 @@ button.search__button.field__button,
 .shopify-payment-button {
   display: none;
 }
+
+.product-form__input.product-form__quantity quantity-input.quantity {
+  width: 100%;
+  max-width: 69px;
+  min-height: 41px;
+}
+
+.product-form__input.product-form__quantity quantity-input.quantity input{
+ font-size: 14px;
+}
