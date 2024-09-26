@@ -5687,9 +5687,11 @@ a.modes-mode.mode-list.active:before {
   display: flex;
 }
 
+.swym-btn-container .swym-fave-count,
 span.swym-fave-count.disabled.swym-added {
-  display: none;
+  display: none !important;
 }
+
 
 span.swym-wishlist-cta {
   display: none;
@@ -5703,7 +5705,7 @@ span.swym-wishlist-cta {
   content: '\f08a';
   font-family: 'FontAwesome';
   font-size: 29px;
-  width: 35px;
+  width: 39px;
   line-height: 41px;
   margin: 0px 0px;
   color: #888888 !important;
@@ -5716,4 +5718,6 @@ span.swym-wishlist-cta {
 
 .product__info-wrapper .swym-btn-container[data-position=default] .swym-add-to-wishlist.swym-iconbtnlink {
   height: 41px;
+  opacity: 1;
+  outline: none;
 }
