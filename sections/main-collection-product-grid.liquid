@@ -143,6 +143,12 @@
             class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
           >
             <div class="loading-overlay gradient"></div>
+          <div class="modes">
+                      <a title="Grid" class="modes-mode mode-grid" data-value="grid">
+                    </a>
+                      <a class="modes-mode mode-list" title="List" href="#" id="mode-list">
+                    </a>
+          </div>
             <ul
               id="product-grid"
               data-id="{{ section.id }}"

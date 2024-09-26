@@ -1285,7 +1285,7 @@
   }
   
   
-  strong.modes-mode.active.mode-grid:before {
+  a.modes-mode.active.mode-grid:before {
     color: #FE9B30;
     content: '\f009' !important;
     font-family: 'FontAwesome' !important;
@@ -5522,7 +5522,7 @@ button.search__button.field__button,
   margin-bottom: 0;
   background-color: #FE9B30;
   border-radius: unset;
-  border: unset;
+  border: 1px solid #fe9b30;
   line-height: 0;
   font-size: 16px;
   text-transform: capitalize;
@@ -5603,9 +5603,10 @@ ul.shopify-tabs > li{
 
 
 ul.shopify-tabs > li.current{
-  background: #f0f0f0;
-  color: #FE9B30 !important;
-  font-weight: bold !important;
+  color: #fe9b30 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0;
+  border-bottom: 2px solid #FE9B30;
 }
 
 .shopify-tab-content{
