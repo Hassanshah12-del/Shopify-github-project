@@ -5551,6 +5551,10 @@ box-shadow: 0 0 5px #fe9b30, 0 0 25px #fe9b30 !important;
 
 .product-form__input.product-form__quantity .form__label {
   margin-bottom: 0;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #333;
+  margin-right: 10px;
 }
 
 .product__info-wrapper.grid__item .product__title h1 {
@@ -5616,4 +5620,8 @@ ul.shopify-tabs > li.current{
 
 .facets-vertical .facets__summary .icon-caret {
   right: 13px;
+}
+
+.header__icon--cart span.svg-wrapper {
+    display: none;
 }
