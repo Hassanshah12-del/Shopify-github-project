@@ -187,7 +187,20 @@
                 {%- assign skip_card_product_styles = true -%}
               {%- endfor -%}
             </ul>
+<script>
+document.querySelector('#mode-list').addEventListener('click', function() {
+    var productGrid = document.querySelector('#product-grid');
+    productGrid.classList.remove('grid--4-col-desktop'); // Ensure the grid mode is not active
+    productGrid.classList.add('grid--1-col-desktop'); // Switch to list view
+});
 
+// When clicking on .modes-mode.mode-grid
+document.querySelector('.modes-mode.mode-grid').addEventListener('click', function() {
+    var productGrid = document.querySelector('#product-grid');
+    productGrid.classList.remove('grid--1-col-desktop'); // Remove list mode
+    productGrid.classList.add('grid--4-col-desktop'); // Switch to grid view
+});
+</script>
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}
             {%- endif -%}
