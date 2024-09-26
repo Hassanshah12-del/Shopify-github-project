@@ -5656,3 +5656,11 @@ ul.shopify-tabs > li.current{
   max-width: 238px;
 }
 
+.grid--1-col-desktop .card:not(.ratio)>.card__content {
+  grid-template-rows: max-content minmax(0, 0fr) max-content auto;
+}
+
+.grid--1-col-desktop  button.quick-add__submit {
+  padding-left: 0;
+  justify-content: flex-start;
+}
