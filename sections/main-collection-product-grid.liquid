@@ -144,7 +144,7 @@
           >
             <div class="loading-overlay gradient"></div>
           <div class="modes">
-                      <a title="Grid" class="modes-mode mode-grid" data-value="grid">
+                      <a title="Grid" class="modes-mode active mode-grid" href="#" data-value="grid">
                     </a>
                       <a class="modes-mode mode-list" title="List" href="#" id="mode-list">
                     </a>
@@ -188,18 +188,32 @@
               {%- endfor -%}
             </ul>
 <script>
+// When clicking on #mode-list (List View)
 document.querySelector('#mode-list').addEventListener('click', function() {
     var productGrid = document.querySelector('#product-grid');
-    productGrid.classList.remove('grid--4-col-desktop'); // Ensure the grid mode is not active
-    productGrid.classList.add('grid--1-col-desktop'); // Switch to list view
+
+    // Update grid classes
+    productGrid.classList.remove('grid--4-col-desktop'); // Ensure grid mode is not active
+    productGrid.classList.add('grid--1-col-desktop'); // Switch to list mode
+
+    // Toggle active class
+    document.querySelector('#mode-list').classList.add('active'); // Add active class to list view
+    document.querySelector('.modes-mode.mode-grid').classList.remove('active'); // Remove active from grid view
 });
 
-// When clicking on .modes-mode.mode-grid
+// When clicking on .modes-mode.mode-grid (Grid View)
 document.querySelector('.modes-mode.mode-grid').addEventListener('click', function() {
     var productGrid = document.querySelector('#product-grid');
+
+    // Update grid classes
     productGrid.classList.remove('grid--1-col-desktop'); // Remove list mode
-    productGrid.classList.add('grid--4-col-desktop'); // Switch to grid view
+    productGrid.classList.add('grid--4-col-desktop'); // Switch to grid mode
+
+    // Toggle active class
+    document.querySelector('.modes-mode.mode-grid').classList.add('active'); // Add active class to grid view
+    document.querySelector('#mode-list').classList.remove('active'); // Remove active from list view
 });
+
 </script>
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}

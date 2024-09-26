@@ -5645,3 +5645,14 @@ ul.shopify-tabs > li.current{
   display: none;
 }
 
+.grid--1-col-desktop .card.card--standard.card--media {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.grid--1-col-desktop .card--standard .card__inner {
+  width: 100%;
+  max-width: 238px;
+}
+
