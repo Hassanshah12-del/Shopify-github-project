@@ -5625,3 +5625,8 @@ ul.shopify-tabs > li.current{
 .header__icon--cart span.svg-wrapper {
     display: none;
 }
+
+.product-form__input.product-form__quantity .form__label span.quantity__rules-cart {
+  display: none;
+}
+
