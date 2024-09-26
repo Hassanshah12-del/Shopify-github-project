@@ -5664,3 +5664,21 @@ ul.shopify-tabs > li.current{
   padding-left: 0;
   justify-content: flex-start;
 }
+
+.facets__display-vertical {
+  border: 1px solid #d7d7d7;
+  border-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 7.5px;
+  padding-inline: 20px;
+}
+
+
+.modes a {
+  text-decoration: none;
+}
+
+
+a.modes-mode.mode-list.active:before {
+  color: #fe9b30;
+}
