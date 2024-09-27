@@ -5702,23 +5702,25 @@ span.swym-wishlist-cta {
 }
 
 .product__info-wrapper .swym-btn-container[data-position=default] .swym-add-to-wishlist.swym-iconbtnlink:after {
-  content: '\f08a';
-  font-family: 'FontAwesome';
+  content: "\f08a";
+  font-family: FontAwesome;
   font-size: 29px;
-  width: 39px;
   line-height: 41px;
-  margin: 0px 0px;
-  color: #888888 !important;
+  color: #888 !important;
   opacity: 1;
   height: 41px;
-  border: 1px solid #cccccc;
-  margin-left: 11px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .product__info-wrapper .swym-btn-container[data-position=default] .swym-add-to-wishlist.swym-iconbtnlink {
-  height: 41px;
-  opacity: 1;
-  outline: none;
+    height: 41px;
+    opacity: 1;
+    outline: none;
+    padding: 0;
+    width: 39px;
+    border: 1px solid #cccccc;
+    margin-left: 11px;
 }
 
 .ldt-cp-product-add-to-compare-button {
