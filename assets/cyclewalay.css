@@ -5775,6 +5775,7 @@ span.swym-wishlist-cta {
   margin: 0 0 0 11px !important;
   width: 39px !important;
   text-decoration: none !important;
+  position: relative;
 }
 
 body .facets-vertical .active-facets-vertical-filter {
