@@ -5815,3 +5815,16 @@ body .jdgm-preview-badge .jdgm-star {
   color: #fe9b30;
 }
 
+ul.shopify-tabs {
+    margin-top: 20px;
+}
+
+.facets-vertical .facet-checkbox input[type=checkbox] + svg {
+  display: none;
+}
+
+.facets-vertical span.facet-checkbox__text {
+  font-size: 14px;
+  color: #000;
+}
+
