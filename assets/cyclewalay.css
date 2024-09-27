@@ -5787,3 +5787,15 @@ body .facets-vertical .active-facets-vertical-filter {
   font-weight: bold;
   margin-bottom: 30px;
 }
+
+.ldt-cp-product-remove-from-compare-button:after {
+  content: "";
+  height: 1px;
+  width: 54px;
+  display: block;
+  background: red;
+  position: absolute;
+  top: 101%;
+  transform: rotate(45deg) translate(-50%, -50%);
+  left: 26%;
+}
