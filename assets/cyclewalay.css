@@ -5811,3 +5811,7 @@ body .facets-vertical .active-facets-vertical-filter h2#verticalTitle {
   font-family: 'metropolis-regular';
 }
 
+body .jdgm-preview-badge .jdgm-star {
+  color: #fe9b30;
+}
+

@@ -703,7 +703,7 @@
   <li class="current" data-tab="tab-description">Description</li>
   <li data-tab="tab-specs">Product Specs</li>
   <li data-tab="tab-delivery">Delivery</li>
-  <li data-tab="tab-returns">Returns</li>
+  <li data-tab="tab-returns">Reviews</li>
 </ul>
 <div id="tab-description" class="shopify-tab-content current">
   {{ product.description }}
@@ -721,19 +721,32 @@
 
 
 <script type="text/javascript">
- document.addEventListener('DOMContentLoaded', function() {
-  const tabs = document.querySelectorAll('ul.shopify-tabs > li');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', function() {
-      document.querySelectorAll('.shopify-tabs > li').forEach(t => t.classList.remove('current'));
-      document.querySelectorAll('.shopify-tab-content').forEach(c => c.classList.remove('current'));
-      this.classList.add('current');
-      const tabId = this.getAttribute('data-tab');
-      document.getElementById(tabId).classList.add('current');
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('ul.shopify-tabs > li');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.shopify-tabs > li').forEach(t => t.classList.remove('current'));
+        document.querySelectorAll('.shopify-tab-content').forEach(c => c.classList.remove('current'));
+        this.classList.add('current');
+
+        const tabId = this.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('current');
+        
+        // Check if the clicked tab is #tab-returns and append the reviews
+        if (tabId === 'tab-returns') {
+          const reviews = document.getElementById('judgeme_product_reviews');
+          const returnsTab = document.getElementById('tab-returns');
+          
+          if (reviews && returnsTab && !returnsTab.contains(reviews)) {
+            returnsTab.appendChild(reviews);
+          }
+        }
+      });
     });
   });
-});
 </script>
+
 </product-info>
 
 {% schema %}
