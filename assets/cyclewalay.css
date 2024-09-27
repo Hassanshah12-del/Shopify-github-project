@@ -5749,6 +5749,8 @@ span.swym-wishlist-cta {
   border: 1px solid #fe9b30 !important;
 }
 
+
+.ldt-cp-product-remove-from-compare-button:before,
 .ldt-cp-product-add-to-compare-button:before {
   content: "\f362";
   font-family: 'Font Awesome 5 Pro';
@@ -5756,15 +5758,24 @@ span.swym-wishlist-cta {
   font-size: 18px;
 }
 
+.ldt-cp-product-remove-from-compare-button:hover:before,
 .ldt-cp-product-add-to-compare-button:hover:before {
   content: "\f362";
   color: #fe9b30 !important;
 }
 
+.ldt-cp-product-remove-from-compare-button span,
 .ldt-cp-product-add-to-compare-button span {
   display: none !important;
 }
 
+.ldt-cp-product-remove-from-compare-button {
+  height: 41px;
+  border: 1px solid #cccccc !important;
+  margin: 0 0 0 11px !important;
+  width: 39px !important;
+  text-decoration: none !important;
+}
 
 body .facets-vertical .active-facets-vertical-filter {
   font-size: 15px;
