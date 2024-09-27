@@ -5672,9 +5672,11 @@ ul.shopify-tabs > li.current{
   border-top: 0;
   margin-bottom: 20px;
   padding-bottom: 7.5px;
-  padding-inline: 20px;
 }
 
+.facets__disclosure-vertical {
+  margin-bottom: 20px;
+}
 
 .modes a {
   text-decoration: none;
