@@ -5800,3 +5800,12 @@ body .facets-vertical .active-facets-vertical-filter {
   transform: rotate(45deg) translate(-50%, -50%);
   left: 26%;
 }
+
+body .facets-vertical .active-facets-vertical-filter h2#verticalTitle {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'metropolis-regular';
+}
+
