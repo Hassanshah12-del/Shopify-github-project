@@ -5701,9 +5701,11 @@ span.swym-wishlist-cta {
   margin: 0;
 }
 
+
+
 .product__info-wrapper .swym-btn-container[data-position=default] .swym-add-to-wishlist.swym-iconbtnlink:after {
-  content: "\f08a";
-  font-family: FontAwesome;
+  content: "\f004";
+  font-family: 'Font Awesome 5 Pro';
   font-size: 29px;
   line-height: 41px;
   color: #888 !important;
@@ -5711,6 +5713,11 @@ span.swym-wishlist-cta {
   height: 41px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.product__info-wrapper .swym-btn-container[data-position=default] .swym-add-to-wishlist.swym-iconbtnlink:hover:after {
+  content: "\f004";
+  color: #fe9b30 !important;
 }
 
 .product__info-wrapper .swym-btn-container[data-position=default] .swym-add-to-wishlist.swym-iconbtnlink {
@@ -5723,6 +5730,10 @@ span.swym-wishlist-cta {
     margin-left: 11px;
 }
 
+.product__info-wrapper .swym-btn-container[data-position=default] .swym-add-to-wishlist.swym-iconbtnlink:hover {
+  border: 1px solid #fe9b30;
+}
+
 .ldt-cp-product-add-to-compare-button {
   height: 41px;
   border: 1px solid #cccccc !important;
@@ -5731,11 +5742,20 @@ span.swym-wishlist-cta {
   text-decoration: none !important;
 }
 
+.ldt-cp-product-add-to-compare-button:hover {
+  border: 1px solid #fe9b30 !important;
+}
+
 .ldt-cp-product-add-to-compare-button:before {
   content: "\f362";
   font-family: 'Font Awesome 5 Pro';
   color: #888 !important;
   font-size: 18px;
+}
+
+.ldt-cp-product-add-to-compare-button:hover:before {
+  content: "\f362";
+  color: #fe9b30 !important;
 }
 
 .ldt-cp-product-add-to-compare-button span {
