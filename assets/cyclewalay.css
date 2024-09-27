@@ -5715,9 +5715,28 @@ span.swym-wishlist-cta {
   margin-left: 11px;
 }
 
-
 .product__info-wrapper .swym-btn-container[data-position=default] .swym-add-to-wishlist.swym-iconbtnlink {
   height: 41px;
   opacity: 1;
   outline: none;
 }
+
+.ldt-cp-product-add-to-compare-button {
+  height: 41px;
+  border: 1px solid #cccccc !important;
+  margin: 0px 0px 0 11px !important;
+  width: 39px !important;
+  text-decoration: none !important;
+}
+
+.ldt-cp-product-add-to-compare-button:before {
+  content: "\f362";
+  font-family: 'Font Awesome 5 Pro';
+  color: #888 !important;
+  font-size: 18px;
+}
+
+.ldt-cp-product-add-to-compare-button span {
+  display: none !important;
+}
+
