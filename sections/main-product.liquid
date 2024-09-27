@@ -722,6 +722,15 @@
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function() {
+    // Append #judgeme_product_reviews to #tab-returns when the page loads
+    const reviews = document.getElementById('judgeme_product_reviews');
+    const returnsTab = document.getElementById('tab-returns');
+
+    if (reviews && returnsTab) {
+      returnsTab.appendChild(reviews);
+    }
+
+    // Set up tab switching logic
     const tabs = document.querySelectorAll('ul.shopify-tabs > li');
     
     tabs.forEach(tab => {
@@ -732,20 +741,11 @@
 
         const tabId = this.getAttribute('data-tab');
         document.getElementById(tabId).classList.add('current');
-        
-        // Check if the clicked tab is #tab-returns and append the reviews
-        if (tabId === 'tab-returns') {
-          const reviews = document.getElementById('judgeme_product_reviews');
-          const returnsTab = document.getElementById('tab-returns');
-          
-          if (reviews && returnsTab && !returnsTab.contains(reviews)) {
-            returnsTab.appendChild(reviews);
-          }
-        }
       });
     });
   });
 </script>
+
 
 </product-info>
 
