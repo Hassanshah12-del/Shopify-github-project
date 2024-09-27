@@ -5828,3 +5828,6 @@ ul.shopify-tabs {
   color: #000;
 }
 
+.facets-vertical .facet-checkbox {
+  padding: 10px 2rem 10px 20px;
+}
