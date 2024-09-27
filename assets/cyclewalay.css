@@ -1287,8 +1287,6 @@
   
   a.modes-mode.active.mode-grid:before {
     color: #FE9B30;
-    content: '\f009' !important;
-    font-family: 'FontAwesome' !important;
   }
   
   
@@ -1693,8 +1691,10 @@
   
   
   a.modes-mode.mode-grid:before {
-    content: '\f009' !important;
-    font-family: 'FontAwesome' !important;
+    font-family: 'Font Awesome 5 Pro' !important;
+    font-weight: 600;
+    font-size: 20px;
+    content: "\f009" !important;
   }
   
   a.modes-mode.mode-list:before {
@@ -5713,6 +5713,7 @@ span.swym-wishlist-cta {
   height: 41px;
   left: 50%;
   transform: translateX(-50%);
+  font-weight: 100;
 }
 
 .product__info-wrapper .swym-btn-container[data-position=default] .swym-add-to-wishlist.swym-iconbtnlink:hover:after {
