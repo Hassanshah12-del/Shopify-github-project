@@ -5831,3 +5831,8 @@ ul.shopify-tabs {
 .facets-vertical .facet-checkbox {
   padding: 10px 2rem 10px 20px;
 }
+
+.outer-modes {
+  display: flex;
+}
+
