@@ -1698,8 +1698,10 @@
   }
   
   a.modes-mode.mode-list:before {
-    content: '\f00b' !important;
-    font-family: 'FontAwesome' !important;
+    content: "\f00b" !important;
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 20px;
+    font-weight: 700;
   }
   
   .toolbar.toolbar-products {
@@ -5763,3 +5765,14 @@ span.swym-wishlist-cta {
   display: none !important;
 }
 
+
+body .facets-vertical .active-facets-vertical-filter {
+  font-size: 15px;
+  line-height: unset !important;
+  border-bottom: unset !important;
+  background-color: #FE9B30;
+  color: #fff;
+  padding: 20px 20px 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
