@@ -76,27 +76,15 @@
   <div class="page-width">
   <div class="product-page-head">
 	<div id="category"></div>
-<div class="breadcrumbs"><!--
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
--->
-<ul class="items">
-
-    <li class="item home">
-        
-        <a href="/" title="Go to Home Page">Home</a>
-        
-    </li>
-
-    <li class="item product">
-        
-        <strong>{{ product.title | escape }}</strong>
-        
-    </li>
-
-</ul>
+<div class="breadcrumbs">
+    <ul class="items">
+        <li class="item home">
+            <a href="/" title="Go to Home Page">Home</a>
+        </li>
+        <li class="item product">
+            <strong>{{ product.title | escape }}</strong>
+        </li>
+    </ul>
 </div>
 </div>
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
