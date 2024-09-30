@@ -133,6 +133,7 @@
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
+              {%- when 'inventory' -%}
               <p>test</p>
         <p
     class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
@@ -174,7 +175,7 @@
   </p>
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
-                  <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+                  <div class="product__description rte quick-add-hidden 123" {{ block.shopify_attributes }}>
                     {{ product.description }}
                   </div>
                 {%- endif -%}
