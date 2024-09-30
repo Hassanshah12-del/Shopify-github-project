@@ -1812,7 +1812,7 @@
     }
   
     .sections.nav-sections nav.navigation li.level0.nav-5.category-item ul.level0.submenu {
-      right: 10 !important;
+      right: 10px !important;
       left: auto !important;
     }
     
