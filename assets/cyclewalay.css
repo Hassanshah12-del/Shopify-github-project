@@ -43,23 +43,23 @@
     color: #000;
   }
   
-  .catalog-product-view .product-page-head {
+  .page-width .product-page-head {
     text-align: center;
     font-size: 25px;
     background-color: #fafafa;
     padding: 30px 0px;
   }
   
-  .catalog-product-view .product-page-head .breadcrumbs {
+  .page-width .product-page-head .breadcrumbs {
     display: block !important;
   }
   
-  .catalog-product-view .product-page-head .breadcrumbs .items a {
+  .page-width .product-page-head .breadcrumbs .items a {
     color: #333;
     font-size: 20px;
   }
   
-  .catalog-product-view .product-page-head .breadcrumbs .items strong {
+  .page-width .product-page-head .breadcrumbs .items strong {
     color: #333;
     font-size: 20px;
   }
