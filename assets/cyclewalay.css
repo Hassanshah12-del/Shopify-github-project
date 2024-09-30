@@ -431,6 +431,10 @@
   .columns .column.main {
     padding-bottom: 0px !important;
   }
+
+  body{   
+  letter-spacing: 0 !important;
+}
   
   body.cms-index-index .page-main {
     max-width: unset !important;

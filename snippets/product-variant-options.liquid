@@ -77,24 +77,26 @@
       additional_props: input_dataset
     %}
   {%- elsif picker_type == 'button' -%}
-    <input
-      type="radio"
+    <option
       id="{{ input_id }}"
-      name="{{ input_name | escape }}"
       value="{{ value | escape }}"
-      form="{{ product_form_id }}"
       {% if value.selected %}
-        checked
+        selected="selected"
       {% endif %}
-      {% if option_disabled %}
-        class="disabled"
+      {% if swatch_value and picker_type == 'swatch_dropdown' %}
+        data-option-swatch-value="{{ swatch_value }}"
+        {% if swatch_focal_point %}
+          data-option-swatch-focal-point="{{ swatch_focal_point }}"
+        {% endif %}
       {% endif %}
       {{ input_dataset }}
     >
-    <label for="{{ input_id }}">
-      {{ value -}}
-      {{ label_unavailable }}
-    </label>
+      {% if option_disabled -%}
+        {{- 'products.product.value_unavailable' | t: option_value: value -}}
+      {%- else -%}
+        {{- value -}}
+      {%- endif %}
+    </option>
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
       id="{{ input_id }}"
