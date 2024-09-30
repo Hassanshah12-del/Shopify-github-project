@@ -107,27 +107,7 @@
                     price_class: 'price--large'
                   -%}
                 </div>
-                {%- when 'inventory' -%}
-  <p
-    class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
-    {{ block.shopify_attributes }}
-    id="Inventory-{{ section.id }}"
-    role="status"
-  >
-    {%- if product.selected_or_first_available_variant.inventory_management == 'shopify' -%}
-      {%- if product.selected_or_first_available_variant.inventory_quantity > 0 -%}
-        <span class="svg-wrapper" style="color: rgb(62, 214, 96)">
-          {{- 'icon-inventory-status.svg' | inline_asset_content -}}
-        </span>
-        {{- 'products.product.inventory_in_stock' | t -}}  <!-- This shows the "in stock" message -->
-      {%- else -%}
-        <span class="svg-wrapper" style="color: rgb(200, 200, 200)">
-          {{- 'icon-inventory-status.svg' | inline_asset_content -}}
-        </span>
-        {{- 'products.product.inventory_out_of_stock' | t -}}  <!-- This shows the "out of stock" message -->
-      {%- endif -%}
-    {%- endif -%}
-  </p>
+ 
                 {%- if product.quantity_price_breaks_configured? -%}
                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
                     <span>{{ 'products.product.volume_pricing.note' | t }}</span>
@@ -205,6 +185,26 @@
                     {%- endif -%}
                   {%- endif -%}
                 </p>
+                 <p
+    class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
+    {{ block.shopify_attributes }}
+    id="Inventory-{{ section.id }}"
+    role="status"
+  >
+    {%- if product.selected_or_first_available_variant.inventory_management == 'shopify' -%}
+      {%- if product.selected_or_first_available_variant.inventory_quantity > 0 -%}
+        <span class="svg-wrapper" style="color: rgb(62, 214, 96)">
+          {{- 'icon-inventory-status.svg' | inline_asset_content -}}
+        </span>
+        {{- 'products.product.inventory_in_stock' | t -}}  <!-- This shows the "in stock" message -->
+      {%- else -%}
+        <span class="svg-wrapper" style="color: rgb(200, 200, 200)">
+          {{- 'icon-inventory-status.svg' | inline_asset_content -}}
+        </span>
+        {{- 'products.product.inventory_out_of_stock' | t -}}  <!-- This shows the "out of stock" message -->
+      {%- endif -%}
+    {%- endif -%}
+  </p>
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
