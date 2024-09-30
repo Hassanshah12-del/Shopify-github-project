@@ -5836,3 +5836,9 @@ ul.shopify-tabs {
   display: flex;
 }
 
+.product__info-wrapper select.select__select {
+    height: 32px;
+    border: 1px solid #ccc !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
