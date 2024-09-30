@@ -74,6 +74,19 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <div class="page-width">
+  <div class="product-page-head">
+	<div id="category"></div>
+<div class="breadcrumbs">
+    <ul class="items">
+        <li class="item home">
+            <a href="/" title="Go to Home Page">Home</a>
+        </li>
+        <li class="item product">
+            <strong>{{ product.title | escape }}</strong>
+        </li>
+    </ul>
+</div>
+</div>
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
         {% render 'product-media-gallery', variant_images: variant_images %}
@@ -133,63 +146,52 @@
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
-              {%- when 'inventory' -%}
-                <p
-                  class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
-                  {{ block.shopify_attributes }}
-                  id="Inventory-{{ section.id }}"
-                  role="status"
-                >
-                  {%- if product.selected_or_first_available_variant.inventory_management == 'shopify' -%}
-                    {%- if product.selected_or_first_available_variant.inventory_quantity > 0 -%}
-                      {%- if product.selected_or_first_available_variant.inventory_quantity
-                          <= block.settings.inventory_threshold
-                      -%}
-                        <span class="svg-wrapper" style="color: rgb(238, 148, 65)">
-                          {{- 'icon-inventory-status.svg' | inline_asset_content -}}
-                        </span>
-                        {%- if block.settings.show_inventory_quantity -%}
-                          {{-
-                            'products.product.inventory_low_stock_show_count'
-                            | t: quantity: product.selected_or_first_available_variant.inventory_quantity
-                          -}}
-                        {%- else -%}
-                          {{- 'products.product.inventory_low_stock' | t -}}
-                        {%- endif -%}
-                      {%- else -%}
-                        <span class="svg-wrapper" style="color: rgb(62, 214, 96)">
-                          {{- 'icon-inventory-status.svg' | inline_asset_content -}}
-                        </span>
-                        {%- if block.settings.show_inventory_quantity -%}
-                          {{-
-                            'products.product.inventory_in_stock_show_count'
-                            | t: quantity: product.selected_or_first_available_variant.inventory_quantity
-                          -}}
-                        {%- else -%}
-                          {{- 'products.product.inventory_in_stock' | t -}}
-                        {%- endif -%}
-                      {%- endif -%}
-                    {%- else -%}
-                      {%- if product.selected_or_first_available_variant.inventory_policy == 'continue' -%}
-                        <span class="svg-wrapper" style="color: rgb(62, 214, 96)">
-                          {{- 'icon-inventory-status.svg' | inline_asset_content -}}
-                        </span>
-                        {{- 'products.product.inventory_out_of_stock_continue_selling' | t -}}
-                      {%- else -%}
-                        <span class="svg-wrapper" style="color: rgb(200, 200, 200)">
-                          {{- 'icon-inventory-status.svg' | inline_asset_content -}}
-                        </span>
-                        {{- 'products.product.inventory_out_of_stock' | t -}}
-                      {%- endif -%}
-                    {%- endif -%}
-                  {%- endif -%}
-                </p>
-              {%- when 'description' -%}
+                    {%- when 'description' -%}
                 {%- if product.description != blank -%}
-                  <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+                  <div class="product__description rte quick-add-hidden 123" {{ block.shopify_attributes }}>
                     {{ product.description }}
                   </div>
                 {%- endif -%}
+              {%- when 'inventory' -%}
+        <p
+    class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+    id="Inventory-{{ section.id }}"
+    role="status"
+    {{ block.shopify_attributes }}
+  >
+    {%- assign current_variant = product.selected_or_first_available_variant -%}
+
+    {%- if current_variant.inventory_management == 'shopify' -%}
+      {%- if current_variant.available -%}
+        {%- if current_variant.inventory_quantity > 0 -%}
+          <span class="svg-wrapper" style="color: rgb(62, 214, 96)">
+            {{- 'icon-inventory-status.svg' | inline_asset_content -}}
+          </span>
+          {% if block.settings.show_inventory_quantity %}
+            {{- 'products.product.inventory_in_stock_show_count' | t: quantity: current_variant.inventory_quantity -}}
+          {% else %}
+            <span>In Stock</span>
+          {% endif %}
+        {%- else -%}
+          <span class="svg-wrapper" style="color: rgb(200, 200, 200)">
+            {{- 'icon-inventory-status.svg' | inline_asset_content -}}
+          </span>
+          <span>Out of Stock</span>
+        {%- endif -%}
+      {%- else -%}
+        <span class="svg-wrapper" style="color: rgb(200, 200, 200)">
+          {{- 'icon-inventory-status.svg' | inline_asset_content -}}
+        </span>
+        <span>Out of Stock</span>
+      {%- endif -%}
+    {%- else -%}
+      <span class="svg-wrapper" style="color: gray;">
+        {{- 'icon-inventory-status.svg' | inline_asset_content -}}
+      </span>
+      <span>Availability Unknown</span>
+    {%- endif -%}
+  </p>
+          
               {%- when 'sku' -%}
                 <p
                   class="product__sku{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
