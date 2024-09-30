@@ -57,12 +57,22 @@
   .page-width .product-page-head .breadcrumbs .items a {
     color: #333;
     font-size: 20px;
+    text-decoration: none;
   }
   
   .page-width .product-page-head .breadcrumbs .items strong {
     color: #333;
     font-size: 20px;
   }
+
+  .page-width .product-page-head .breadcrumbs ul.items {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 6px 0;
+    gap: 10px;
+}
   
   .catalog-product-view .page-main {
     max-width: 1520px !important;
