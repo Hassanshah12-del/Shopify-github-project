@@ -5857,7 +5857,7 @@ ul.shopify-tabs {
     box-shadow: none !important;
 }
 
-.product__info-wrapper .product-form__input .form__label {
+.product__info-wrapper variant-selects .product-form__input .form__label {
   padding-left: 0;
   margin-bottom: 0;
   font-size: 16px;
@@ -5866,7 +5866,7 @@ ul.shopify-tabs {
   letter-spacing: 0;
 }
 
-.product__info-wrapper .product-form__input .form__label:after {
+.product__info-wrapper variant-selects .product-form__input .form__label:after {
   content: " *";
   color: red;
 }
