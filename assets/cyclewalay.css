@@ -5972,3 +5972,11 @@ body .facets__header-vertical {
   right: auto !important;
   bottom: auto !important;
 }
+
+body .facet-checkbox .svg-wrapper {
+  display: none;
+}
+
+body .product-count-vertical {
+  margin-left: 30px;
+}
