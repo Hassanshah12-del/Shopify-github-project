@@ -72,7 +72,7 @@
     list-style: none;
     padding: 0;
     margin: 6px 0;
-    gap: 10px;
+    gap: 5px;
 }
   
   .catalog-product-view .page-main {
@@ -6071,4 +6071,6 @@ product-info {
     content: "\f105";
     font-family: 'Font Awesome 5 Pro';
     margin-inline: 10px;
+        font-size: 20px;
+    font-weight: 300;
 }
