@@ -63,6 +63,7 @@
    .product-page-head .breadcrumbs .items strong {
     color: #333;
     font-size: 20px;
+    font-weight: 100;
   }
 
   .catalog-product-view .product-page-head .breadcrumbs ul.items {
@@ -6060,4 +6061,14 @@ body .select .svg-wrapper {
 .facets__price .field:before,
 .facets__price .field:after{
   content:none !important;
+}
+
+product-info {
+  padding-top: 0 !important;
+}
+
+.catalog-product-view .product-page-head .breadcrumbs ul.items .item:not(:last-child):after {
+    content: "\f105";
+    font-family: 'Font Awesome 5 Pro';
+    margin-inline: 10px;
 }
