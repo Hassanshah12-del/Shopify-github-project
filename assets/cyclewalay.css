@@ -6050,3 +6050,7 @@ body .select .svg-wrapper {
    right: 10px;
 }
 
+.facets__price .field:before,
+.facets__price .field:after{
+  content:none !important;
+}
