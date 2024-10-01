@@ -5529,7 +5529,15 @@ button.search__button.field__button,
 }
 
 .product-form__input.product-form__quantity quantity-input.quantity input{
- font-size: 14px;
+  font-size: 14px;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #c2c2c2;
+}
+
+.quantity:before,
+.quantity:after{
+  content: none !important;
 }
 
 
@@ -5904,7 +5912,6 @@ ul.shopify-tabs {
 
 .facets__disclosure-vertical input.field__input {
   height: 32px;
-  padding: 0;
   font-size: 14px;
   box-shadow: none;
   border: 1px solid #b2afaf !important;
