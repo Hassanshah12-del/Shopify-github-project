@@ -5891,3 +5891,8 @@ ul.shopify-tabs {
   margin: 0;
 }
 
+.outer-modes {
+  display: flex;
+  align-items: end;
+}
+
