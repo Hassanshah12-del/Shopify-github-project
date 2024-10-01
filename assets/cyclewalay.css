@@ -5935,3 +5935,8 @@ body .facets__header-vertical {
   color: #333;
   font-weight: bold;
 }
+
+
+.ldt-cp-min-w-fit .status {
+  display: none !important;
+}
