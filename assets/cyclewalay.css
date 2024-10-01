@@ -5965,3 +5965,10 @@ body .facets__header-vertical {
   right: 0;
   min-width: auto;
 }
+
+
+.grid--1-col-desktop button.quick-add__submit {
+  left: 7px;
+  right: auto !important;
+  bottom: auto !important;
+}
