@@ -5903,10 +5903,13 @@ ul.shopify-tabs {
 }
 
 .facets__disclosure-vertical input.field__input {
-  width: 62px;
   height: 32px;
   padding: 0;
-  min-width: auto !important;
+  width: 62px;
+  font-size: 14px;
+  box-shadow: none;
+  border: 1px solid #b2afaf !important;
+  padding: 0px 8px;
 }
 
 .facets__price .field__label {
@@ -5972,6 +5975,9 @@ body .facets__header-vertical {
   min-width: auto;
 }
 
+#product-grid modal-opener {
+  display: none;
+}
 
 .grid--1-col-desktop button.quick-add__submit {
   left: 7px;
@@ -6008,6 +6014,8 @@ select#SortBy {
   padding: 4px 25px 5px 10px;
   font-size: 14px;
   outline: none;
+  color: #000;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .facet-filters__field .facet-filters__label {
@@ -6029,5 +6037,17 @@ span#ProductCountDesktop {
 
 .card--standard .card__inner {
   background: transparent !important;
+}
+
+span.active-facets__button-inner {
+  font-size: 14px !important;
+}
+
+h2.title.title--primary {
+  font-size: 14px;
+}
+
+body .select .svg-wrapper {
+   right: 10px;
 }
 
