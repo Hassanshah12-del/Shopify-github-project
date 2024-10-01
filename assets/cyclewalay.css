@@ -5940,3 +5940,14 @@ body .facets__header-vertical {
 .ldt-cp-min-w-fit .status {
   display: none !important;
 }
+
+#product-grid button.quick-add__submit span:before {
+  content: "\f291";
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  font-family: 'FontAwesome';
+  color: #9E9DA0;
+  font-size: 18px;
+  font-weight: 100;
+}
