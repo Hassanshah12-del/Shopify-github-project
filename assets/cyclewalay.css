@@ -5951,3 +5951,17 @@ body .facets__header-vertical {
   font-size: 18px;
   font-weight: 100;
 }
+
+.card--standard>.card__content {
+  position: relative;
+}
+
+#product-grid button.quick-add__submit {
+  width: auto;
+  min-height: auto;
+  padding: 0;
+  position: absolute;
+  bottom: 51px;
+  right: 0;
+  min-width: auto;
+}
