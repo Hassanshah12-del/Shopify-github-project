@@ -5387,7 +5387,7 @@ h3.card__heading a {
   color: #000;
 }
 
-button.quick-add__submit span:first-child:before {
+.grid.product-grid.contains-card button.quick-add__submit span:first-child:before {
   font-family: FontAwesome;
   content: "\f07a" !important;
   color: #000;
