@@ -5980,3 +5980,17 @@ body .facet-checkbox .svg-wrapper {
 body .product-count-vertical {
   margin-left: 30px;
 }
+
+
+.facets-vertical .active-facets-vertical-filter .active-facets__button-wrapper {
+  margin-bottom: 0 !important;
+}
+
+.facets-vertical .active-facets-vertical-filter .active-facets__button-wrapper a.active-facets__button-remove {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.facets-vertical .active-facets-vertical-filter .active-facets__button-wrapper a.active-facets__button-remove span{
+  font-size: 14px !important;
+}
