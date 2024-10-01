@@ -5896,3 +5896,23 @@ ul.shopify-tabs {
   align-items: end;
 }
 
+.facets__disclosure-vertical input.field__input {
+  width: 62px;
+  height: 32px;
+  padding: 0;
+  min-width: auto !important;
+}
+
+.facets__price .field__label {
+  display: none;
+}
+
+.facets__disclosure-vertical input.field__input {
+  height: 32px;
+  padding: 0;
+  width: 62px;
+}
+
+.facets__disclosure-vertical .field{
+  width: 62px;
+}
