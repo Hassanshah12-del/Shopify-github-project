@@ -5916,3 +5916,22 @@ ul.shopify-tabs {
 .facets__disclosure-vertical .field{
   width: 62px;
 }
+
+body .facets__price .field+.field-currency {
+  margin-left: 10px;
+}
+
+body .facets-vertical .facets__price .field:last-of-type {
+  margin-left: 0;
+}
+
+body .facets-vertical .facets__price {
+  justify-content: center;
+}
+
+body .facets__header-vertical {
+  font-size: 14px;
+  padding: 15px 20px 3px;
+  color: #333;
+  font-weight: bold;
+}
