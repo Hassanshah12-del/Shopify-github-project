@@ -7,7 +7,7 @@
   Usage:
   {% render 'header-search', input_id: 'My-Id'%}
 {% endcomment %}
-        <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+        <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form" id="searchForm">
           <div class="field">
             <input
               class="search__input field__input"
@@ -53,15 +53,18 @@
 
         <script defer>
           document.addEventListener("DOMContentLoaded", function() {
-              const input = document.getElementById('Search-In-Modal');
-              const button = document.getElementById('searchButton');
-  
-              input.addEventListener('input', function() {
-                  if (input.value.trim() === "") {
-                      button.disabled = true;
-                  } else {
-                      button.disabled = false;
-                  }
-              });
-          });
+            const input = document.getElementById('Search-In-Modal');
+            const button = document.getElementById('searchButton');
+            const form = document.getElementById('searchForm');
+        
+            input.addEventListener('input', function() {
+                if (input.value.trim() === "") {
+                    button.disabled = true;
+                    form.classList.add('form-disabled');  // Add class when button is disabled
+                } else {
+                    button.disabled = false;
+                    form.classList.remove('form-disabled');  // Remove class when button is enabled
+                }
+            });
+        });
       </script>

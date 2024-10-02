@@ -6083,7 +6083,7 @@ main#MainContent {
 
 
 .header__icons-outer .search-modal__form {
-  max-width: 200px;
+  max-width: initial;
 }
 
 .header__icons-outer .search-modal__form .search__input.field__input {
