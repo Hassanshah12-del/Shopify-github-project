@@ -6086,3 +6086,15 @@ main#MainContent {
   max-width: 200px;
 }
 
+.header__icons-outer .search-modal__form .search__input.field__input {
+  padding-right: 0;
+  padding: 0;
+  height: 35px;
+  font-size: 14px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  box-shadow: none;
+  background: #fff;
+  border-radius: 2px !important;
+  border: 1px solid #c2c2c2;
+}
+
