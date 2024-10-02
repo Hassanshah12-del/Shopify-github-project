@@ -8,10 +8,8 @@
   {% render 'header-search', input_id: 'My-Id'%}
 {% endcomment %}
 
-<details-modal class="header__search">
-  <details>
-    <summary
-      class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle"
+    <div
+      class="header__icon"
       aria-haspopup="dialog"
       aria-label="{{ 'general.search.search' | t }}"
     >
@@ -23,7 +21,7 @@
           {{- 'icon-close.svg' | inline_asset_content -}}
         </span>
       </span>
-    </summary>
+    </div>
     <div
       class="search-modal modal__content gradient"
       role="dialog"
@@ -104,5 +102,3 @@
         </button>
       </div>
     </div>
-  </details>
-</details-modal>
