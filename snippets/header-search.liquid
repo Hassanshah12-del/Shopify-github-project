@@ -22,10 +22,7 @@
         </span>
       </span>
     </div>
-        {%- if settings.predictive_search_enabled -%}
-        {%- else -%}
-          <search-form class="search-modal__form">
-        {%- endif -%}
+
         <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
           <div class="field">
             <input
@@ -65,18 +62,9 @@
               </span>
             </button>
           </div>
-
-          {%- if settings.predictive_search_enabled -%}
-            <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
-              {%- render 'loading-spinner', class: 'predictive-search__loading-state' -%}
-            </div>
-
-            <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
-          {%- endif -%}
+          
         </form>
 
-          </search-form>
-        {%- endif -%}
         <button
           type="button"
           class="search-modal__close-button modal__close-button link link--text focus-inset"
