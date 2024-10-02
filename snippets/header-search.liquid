@@ -22,13 +22,6 @@
         </span>
       </span>
     </div>
-    <div
-      class="search-modal modal__content gradient"
-      role="dialog"
-      aria-modal="true"
-      aria-label="{{ 'general.search.search' | t }}"
-    >
-
         {%- if settings.predictive_search_enabled -%}
           <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
         {%- else -%}
@@ -96,4 +89,3 @@
             {{- 'icon-close.svg' | inline_asset_content -}}
           </span>
         </button>
-      </div>
