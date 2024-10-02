@@ -6086,7 +6086,26 @@ main#MainContent {
   max-width: initial;
 }
 
+.header__icons-outer .search-modal__form.form-active {
+  max-width: 200px;
+}
+
 .header__icons-outer .search-modal__form .search__input.field__input {
+  padding: 0;
+  height: 35px;
+  font-size: 14px;
+  font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: #fff;
+  border-radius: 2px !important;
+  border: 0;
+  padding-inline: 0px;
+  outline: none;
+  box-shadow: none;
+  min-width: 0;
+  width: 0;
+}
+
+.header__icons-outer .search-modal__form.form-active .search__input.field__input {
   padding: 0;
   height: 35px;
   font-size: 14px;
@@ -6095,9 +6114,10 @@ main#MainContent {
   border-radius: 2px !important;
   border: 1px solid #c2c2c2;
   padding-inline: 10px 35px;
-  outline: none;
   box-shadow: 0 0 3px 1px #00699d;
 }
+
+
 
 .header__icons-outer .search-modal__form label.field__label {
   display: none;
