@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
-
+    {{ 'cyclewalay.css' | asset_url | stylesheet_tag }} 
+    {{ 'bootstrap.css' | asset_url | stylesheet_tag }} 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -270,7 +271,7 @@
         }
       }
     {% endstyle %}
-    {{ 'cyclewalay.css' | asset_url | stylesheet_tag }} 
+
     {{ 'base.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
     
