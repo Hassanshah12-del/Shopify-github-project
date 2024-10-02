@@ -6080,3 +6080,9 @@ product-info {
 main#MainContent {
   overflow: hidden;
 }
+
+
+.header__icons-outer .search-modal__form {
+  max-width: 200px;
+}
+
