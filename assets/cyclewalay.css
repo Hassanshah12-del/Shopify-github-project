@@ -5245,10 +5245,10 @@
   padding: 5.62px 0px;
 }
 
-sticky-header.header-wrapper {
-  background: transparent;
-  border-bottom: 0;
-}
+  sticky-header.header-wrapper {
+    background: transparent;
+    border-bottom: 0;
+  }
 
 img.header__heading-logo {
   object-fit: none;    
