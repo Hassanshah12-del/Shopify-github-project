@@ -69,15 +69,22 @@
       
               // Handle the button click
               button.addEventListener('click', function(event) {
-                  // If the input is empty when the button is clicked
                   if (input.value.trim() === "") {
-                      event.preventDefault(); // Prevent the form from being submitted
+                      event.preventDefault(); // Prevent form submission
                       form.classList.add('form-active'); // Add the class as feedback
                   } else {
-                      // Allow the form submission when input is valid
-                      form.classList.remove('form-active'); // Just in case it was added previously
-                      button.disabled = false; // Ensure the button is enabled
+                      form.classList.remove('form-active'); // Allow submission if valid
+                      button.disabled = false; // Ensure button is enabled
+                  }
+              });
+      
+              // Remove the 'form-active' class when clicking outside the input and button
+              document.addEventListener('click', function(event) {
+                  // Check if the click is outside the input or button
+                  if (!form.contains(event.target)) {
+                      form.classList.remove('form-active');
                   }
               });
           });
       </script>
+      
