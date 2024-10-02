@@ -6087,7 +6087,6 @@ main#MainContent {
 }
 
 .header__icons-outer .search-modal__form .search__input.field__input {
-  padding-right: 0;
   padding: 0;
   height: 35px;
   font-size: 14px;
@@ -6096,5 +6095,28 @@ main#MainContent {
   background: #fff;
   border-radius: 2px !important;
   border: 1px solid #c2c2c2;
+  padding-inline: 10px 35px;
+  outline: none;
 }
 
+.header__icons-outer .search-modal__form label.field__label {
+  display: none;
+}
+
+.header__icons-outer .search-modal__form button.search__button.field__button {
+  height: auto;
+  right: 0;
+  width: auto;
+}
+
+.header__icons-outer .search-modal__form button.search__button.field__button span.svg-wrapper:before {
+  content: "\f002";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 21px;
+  font-weight: 700;
+  color: #fe9b30;
+}
+
+.header__icons-outer .search-modal__form button.search__button.field__button span.svg-wrapper svg {
+  display: none;
+}
