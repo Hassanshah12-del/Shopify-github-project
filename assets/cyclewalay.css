@@ -6120,3 +6120,8 @@ main#MainContent {
 .header__icons-outer .search-modal__form button.search__button.field__button span.svg-wrapper svg {
   display: none;
 }
+
+.header__icons-outer .search-modal__form .field:before,
+.header__icons-outer .search-modal__form .field:after{
+  content: none !important;
+}
