@@ -40,7 +40,7 @@
                 {{- 'icon-reset.svg' | inline_asset_content -}}
               </span>
             </button>
-            <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+            <button id="searchButton" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}" disabled>
               <span class="svg-wrapper">
                 {{- 'icon-search.svg' | inline_asset_content -}}
               </span>
@@ -48,3 +48,21 @@
           </div>
           
         </form>
+
+
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const input = document.getElementById('searchInput');
+            const button = document.getElementById('searchButton');
+        
+            // Check input value and toggle button state
+            input.addEventListener('input', function() {
+                if (input.value.trim() === "") {
+                    button.disabled = true;
+                } else {
+                    button.disabled = false;
+                }
+            });
+        });
+        </script>

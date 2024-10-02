@@ -6091,12 +6091,12 @@ main#MainContent {
   height: 35px;
   font-size: 14px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  box-shadow: none;
   background: #fff;
   border-radius: 2px !important;
   border: 1px solid #c2c2c2;
   padding-inline: 10px 35px;
   outline: none;
+  box-shadow: 0 0 3px 1px #00699d;
 }
 
 .header__icons-outer .search-modal__form label.field__label {
@@ -6124,4 +6124,10 @@ main#MainContent {
 .header__icons-outer .search-modal__form .field:before,
 .header__icons-outer .search-modal__form .field:after{
   content: none !important;
+}
+
+.header__icons-outer .search-modal__form button.reset__button.field__button {
+  height: auto;
+  width: auto;
+  right: 35px;
 }
