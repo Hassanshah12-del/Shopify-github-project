@@ -57,13 +57,23 @@
             const button = document.getElementById('searchButton');
             const form = document.getElementById('searchForm');
         
+            // Enable button if input is not empty on input
             input.addEventListener('input', function() {
                 if (input.value.trim() === "") {
                     button.disabled = true;
-                    form.classList.add('form-disabled');  // Add class when button is disabled
                 } else {
                     button.disabled = false;
-                    form.classList.remove('form-disabled');  // Remove class when button is enabled
+                }
+            });
+        
+            // Add or remove class when button is clicked
+            button.addEventListener('click', function(event) {
+                event.preventDefault();  // Prevent form submission for testing
+        
+                if (button.disabled === false) {
+                    form.classList.add('form-active');  // Add class on button click
+                } else {
+                    form.classList.remove('form-active');  // Remove class if button is disabled
                 }
             });
         });
