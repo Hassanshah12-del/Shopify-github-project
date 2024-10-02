@@ -5278,6 +5278,7 @@ header.header--top-left {
 .action-button-sets {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .top-head-extra {
@@ -6090,6 +6091,8 @@ main#MainContent {
 .header__icons-outer .search-modal__form.form-active {
   max-width: 200px;
   margin-left: 0px;
+  position: absolute;
+  left: -138px;
 }
 
 .header__icons-outer .search-modal__form .search__input.field__input {
