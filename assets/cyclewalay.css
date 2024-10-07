@@ -6269,3 +6269,16 @@ body .catalog-product-view .product-page-head {
   margin-bottom: 20px;
 }
 }
+
+
+.f-open, .f-open1, .f-open2 {
+  display: none;
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.f-open.show, .f-open1.show, .f-open2.show {
+  display: block;
+  max-height: 500px; /* Adjust according to the content's height */
+}
