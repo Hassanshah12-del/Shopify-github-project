@@ -6178,6 +6178,10 @@ main#MainContent {
 
 
 @media screen and (max-width:989px){
+  body .shopify-section-group-header-group {
+    z-index: 3;
+}
+
   header-drawer .list-menu__item {
     color: #fff !important;
     font-size: 15px;
