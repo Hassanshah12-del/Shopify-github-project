@@ -6193,6 +6193,16 @@ main#MainContent {
   width: calc(100% - 54px);
 }
 
+body .header__icon--menu[aria-expanded=true]:before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  height: auto;
+  position: fixed;
+}
+
 .menu-drawer__utility-links:has(.menu-drawer__localization) .menu-drawer__account {
   color: #fff !important;
   font-size: 15px;
