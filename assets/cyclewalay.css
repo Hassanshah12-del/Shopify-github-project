@@ -495,7 +495,14 @@
   
   
   @media screen and (max-width: 767px){
+    .f-open, .f-open1, .f-open2 {
+      display: none;
+    }
     
+    .f-open.show, .f-open1.show, .f-open2.show {
+      display: block;
+    
+    }
     .catalog-product-view .product.media{
       position: relative;
     }
@@ -6271,11 +6278,3 @@ body .catalog-product-view .product-page-head {
 }
 
 
-.f-open, .f-open1, .f-open2 {
-  display: none;
-}
-
-.f-open.show, .f-open1.show, .f-open2.show {
-  display: block;
-
-}
