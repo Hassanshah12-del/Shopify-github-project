@@ -6207,4 +6207,17 @@ body .logo-menu {
   margin-left: 0;
 }
 
+body .header__icon--menu .icon {
+  color: #fff;
+  transform: none;
+}
+
+body .header__icon--cart {
+  margin-right: 0;
+}
+
+body .header__icon--cart:before {
+  color: #fff;
+}
+
 }
