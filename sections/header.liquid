@@ -436,9 +436,9 @@
     // Function to handle the cart icon positioning
     function handleCartIconPosition() {
         if (window.matchMedia("(max-width: 768px)").matches) {
-            // Mobile view: prepend cart icon to logo-menu-outer
+            // Mobile view: append cart icon to logo-menu-outer
             if (cartIcon.parentElement !== logoMenuOuter) {
-                logoMenuOuter.prepend(cartIcon);
+                logoMenuOuter.append(cartIcon);
             }
         } else {
             // Desktop view: replace cart icon to its original position
