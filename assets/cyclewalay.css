@@ -6257,7 +6257,14 @@ body .right-product #search_mini_form fieldset.fieldset.row .control {
 body ul.shopify-tabs>li {
   display: block;
   padding: 1px 0px;
+  border-bottom: 1px solid #ccc;
 }
 
+body .shopify-tab-content {
+  padding: 15px 0px;
+}
 
+body .catalog-product-view .product-page-head {
+  margin-bottom: 20px;
+}
 }
