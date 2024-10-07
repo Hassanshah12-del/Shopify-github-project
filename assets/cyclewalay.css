@@ -6232,4 +6232,22 @@ body .logo-menu .header__heading-link {
   padding-left: 0;
 }
 
+body .right-product #search_mini_form fieldset.fieldset.row .control {
+  display: block;
+}
+
+#product-grid button.quick-add__submit {
+  right: 10px;
+  top: 3px;
+  bottom: auto;
+}
+   
+#product-grid .card--standard>.card__content {
+  position: static;
+}
+
+#product-grid .quick-add {
+  position: static;
+}
+
 }
