@@ -1,0 +1,7 @@
+development:
+  password: 123
+  theme_id: "131779723399"
+  store: https://cyclewalay.myshopify.com/
+  ignore_files:
+    - "*.jpg"
+    - "*.png"
