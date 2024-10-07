@@ -6201,6 +6201,11 @@ body .top-head-extra p.call-no {
 
 .logo-menu-outer {
   display: flex;
+  padding-inline: 15px;
+}
+
+body .header__icon--cart .cart-count-bubble {
+  left: auto;
 }
 
 body .logo-menu {
@@ -6214,10 +6219,13 @@ body .header__icon--menu .icon {
 
 body .header__icon--cart {
   margin-right: 0;
+  justify-content: right !important;
 }
 
 body .header__icon--cart:before {
   color: #fff;
+  position: relative;
+  left: -7px;
 }
 
 }
