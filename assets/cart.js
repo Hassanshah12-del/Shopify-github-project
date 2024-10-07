@@ -131,6 +131,11 @@ class CartItems extends HTMLElement {
         selector: '.shopify-section',
       },
       {
+        id: 'cart-icon-bubble-2', // Adding the second cart icon
+        section: 'cart-icon-bubble-2',
+        selector: '.shopify-section',
+      },
+      {
         id: 'cart-live-region-text',
         section: 'cart-live-region-text',
         selector: '.shopify-section',
