@@ -6228,4 +6228,8 @@ body .header__icon--cart:before {
   left: -7px;
 }
 
+body .logo-menu .header__heading-link {
+  padding-left: 0;
+}
+
 }
