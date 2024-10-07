@@ -31,7 +31,7 @@ if (!customElements.get('quick-add-bulk')) {
           ) {
             return;
           }
-          // If it's another section that made the update
+          // If its another section that made the update
           this.onCartUpdate().then(() => {
             this.listenForActiveInput();
             this.listenForKeydown();
@@ -147,14 +147,9 @@ if (!customElements.get('quick-add-bulk')) {
             selector: '.shopify-section',
           },
           {
-            id: 'cart-icon-bubble-2', // Adding the second cart icon
-            section: 'cart-icon-bubble-2',
-            selector: '.shopify-section',
-          },
-          {
             id: 'CartDrawer',
-            section: 'cart-drawer',
             selector: '#CartDrawer',
+            section: 'cart-drawer',
           },
         ];
       }
@@ -162,7 +157,6 @@ if (!customElements.get('quick-add-bulk')) {
       renderSections(parsedState, ids) {
         const intersection = this.queue.filter((element) => ids.includes(element.id));
         if (intersection.length !== 0) return;
-
         this.getSectionsToRender().forEach((section) => {
           const sectionElement = document.getElementById(section.id);
           if (

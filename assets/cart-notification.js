@@ -59,9 +59,6 @@ class CartNotification extends HTMLElement {
       {
         id: 'cart-icon-bubble',
       },
-      {
-        id: 'cart-icon-bubble-2', // Add the second cart icon section
-      },
     ];
   }
 

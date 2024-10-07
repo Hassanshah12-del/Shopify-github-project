@@ -208,11 +208,6 @@ if (!customElements.get('quick-order-list')) {
             selector: '.shopify-section',
           },
           {
-            id: 'cart-icon-bubble-2', // New cart icon section
-            section: 'cart-icon-bubble-2',
-            selector: '.shopify-section',
-          },
-          {
             id: `quick-order-list-live-region-text-${this.dataset.productId}`,
             section: 'cart-live-region-text',
             selector: '.shopify-section',

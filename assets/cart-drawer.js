@@ -8,15 +8,7 @@ class CartDrawer extends HTMLElement {
   }
 
   setHeaderCartIconAccessibility() {
-    // Handling cart-icon-bubble (first cart icon)
-    this.handleCartIcon('cart-icon-bubble');
-    
-    // Handling cart-icon-bubble-2 (second cart icon)
-    this.handleCartIcon('cart-icon-bubble-2');
-  }
-
-  handleCartIcon(iconId) {
-    const cartLink = document.querySelector(`#${iconId}`);
+    const cartLink = document.querySelector('#cart-icon-bubble');
     if (!cartLink) return;
 
     cartLink.setAttribute('role', 'button');
@@ -37,6 +29,7 @@ class CartDrawer extends HTMLElement {
     if (triggeredBy) this.setActiveElement(triggeredBy);
     const cartDrawerNote = this.querySelector('[id^="Details-"] summary');
     if (cartDrawerNote && !cartDrawerNote.hasAttribute('role')) this.setSummaryAccessibility(cartDrawerNote);
+    // here the animation doesn't seem to always get triggered. A timeout seem to help
     setTimeout(() => {
       this.classList.add('animate', 'active');
     });
@@ -109,10 +102,11 @@ class CartDrawer extends HTMLElement {
       {
         id: 'cart-icon-bubble',
       },
-      {
-        id: 'cart-icon-bubble-2', // Add the new section for the second cart icon
-      },
     ];
+  }
+
+  getSectionDOM(html, selector = '.shopify-section') {
+    return new DOMParser().parseFromString(html, 'text/html').querySelector(selector);
   }
 
   setActiveElement(element) {
@@ -133,11 +127,6 @@ class CartDrawerItems extends CartItems {
       {
         id: 'cart-icon-bubble',
         section: 'cart-icon-bubble',
-        selector: '.shopify-section',
-      },
-      {
-        id: 'cart-icon-bubble-2', // Add the second cart icon section
-        section: 'cart-icon-bubble-2',
         selector: '.shopify-section',
       },
     ];
