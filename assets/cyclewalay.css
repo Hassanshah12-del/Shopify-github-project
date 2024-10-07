@@ -501,11 +501,12 @@
     
     .f-open.show, .f-open1.show, .f-open2.show {
       display: block;
-    
     }
+
     .catalog-product-view .product.media{
       position: relative;
     }
+    
     .catalog-product-view .column.main .product.media .fotorama__nav{
       height: 0px !important;
     }
