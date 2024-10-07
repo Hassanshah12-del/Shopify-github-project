@@ -6178,6 +6178,30 @@ main#MainContent {
 
 
 @media screen and (max-width:989px){
+  header-drawer .list-menu__item {
+    color: #fff !important;
+    font-size: 15px;
+    padding-bottom: 0;
+}
+
+.js details[open].menu-opening>.menu-drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 83;
+  height: auto;
+  width: calc(100% - 54px);
+}
+
+.menu-drawer__utility-links:has(.menu-drawer__localization) .menu-drawer__account {
+  color: #fff !important;
+  font-size: 15px;
+}
+
+.menu-drawer__inner-container {
+  background: #000;
+}
+
 .action-button-sets .repair-button {
   display: none !important;
 }
@@ -6279,3 +6303,6 @@ body .catalog-product-view .product-page-head {
 }
 
 
+.ldt-cp-fixed {
+  display: none;
+}
