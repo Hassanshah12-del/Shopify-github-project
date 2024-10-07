@@ -6178,6 +6178,11 @@ main#MainContent {
 
 
 @media screen and (max-width:989px){
+  body .grid--2-col-tablet-down .grid__item {
+    width: 100%;
+    max-width: 100%;
+}
+
   body .shopify-section-group-header-group {
     z-index: 3;
 }
