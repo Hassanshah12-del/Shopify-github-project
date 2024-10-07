@@ -5722,6 +5722,8 @@ a.modes-mode.mode-list.active:before {
 
 .product__info-wrapper .product-form__buttons {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .swym-btn-container .swym-fave-count,
