@@ -6165,7 +6165,12 @@ main#MainContent {
 
 
 @media screen and (max-width:989px){
-  .for-desktop {
-    display: none;
-  }
+.action-button-sets .repair-button {
+  display: none !important;
+}
+.header__icons.header__icons--localization.header-localization .top-head-extra {
+  display: none;
+}
+
+
 }
