@@ -6179,6 +6179,7 @@ main#MainContent {
 
 .header__icons.header__icons--localization.header-localization {
   display: block;
+  margin: 0 15px;
 }
  
 body .header__icons-outer .search-modal__form .search__input.field__input {
@@ -6186,10 +6187,16 @@ body .header__icons-outer .search-modal__form .search__input.field__input {
   min-width: initial;
   width: 100%;
   border: 1px solid #ccc;
+  padding-inline: 10px 35px;
 }
 
 body .header__icons-outer .search-modal__form {
-  margin-left: 0;
+  margin: 15px 0px;
+  max-width: initial;
+}
+
+body .top-head-extra p.call-no {
+  margin-bottom: 15px;
 }
 
 }
