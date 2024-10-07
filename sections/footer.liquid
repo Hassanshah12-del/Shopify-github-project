@@ -109,25 +109,32 @@
             </section>
 
 <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+    // For head1
+    document.querySelector(".head1").addEventListener("click", function() {
+        if (screen.width < 768) {
+            this.classList.toggle("minus");
+            document.querySelector(".f-open").classList.toggle("show");
+        }
+    });
 
-            $(".head1").click(function(){
-              if (screen.width < 768){
-                  $(".head1").toggleClass("minus");
-        $(".f-open").slideToggle("slow");
-    }
-      });
-        $(".head2").click(function(){
-              if (screen.width < 768){
-                      $(".head2").toggleClass("minus");
-        $(".f-open1").slideToggle("slow");
-    }
-      });
-          $(".head3").click(function(){
-              if (screen.width < 768){
-                      $(".head3").toggleClass("minus");
-        $(".f-open2").slideToggle("slow");
-    }
-      });
+    // For head2
+    document.querySelector(".head2").addEventListener("click", function() {
+        if (screen.width < 768) {
+            this.classList.toggle("minus");
+            document.querySelector(".f-open1").classList.toggle("show");
+        }
+    });
+
+    // For head3
+    document.querySelector(".head3").addEventListener("click", function() {
+        if (screen.width < 768) {
+            this.classList.toggle("minus");
+            document.querySelector(".f-open2").classList.toggle("show");
+        }
+    });
+});
+
 </script>
 
 
