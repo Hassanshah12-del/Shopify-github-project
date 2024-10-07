@@ -107,46 +107,30 @@
             </div>
             </div>
             </section>
-            
-          
-            
-            <script> 
-            
-            
-            require([
-                    "jquery"
-                    ], function ($) { 
-            $(document).ready(function(){
-            
-              $(".head1").click(function(){
-                      if (screen.width < 768){
-                          $(".head1").toggleClass("minus");
-                $(".f-open").slideToggle("slow");
-            }
-              });
-                $(".head2").click(function(){
-                      if (screen.width < 768){
-                              $(".head2").toggleClass("minus");
-                $(".f-open1").slideToggle("slow");
-            }
-              });
-                  $(".head3").click(function(){
-                      if (screen.width < 768){
-                              $(".head3").toggleClass("minus");
-                $(".f-open2").slideToggle("slow");
-            }
-              });
-            
-            
-            });
-            });
-            
-            </script>
 
 <script type="text/javascript">
     require(['jquery', 'domReady!'], function ($) {
         $('#msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef-container')
             .appendTo('#newsletter-validate-detail');
+
+            $(".head1").click(function(){
+              if (screen.width < 768){
+                  $(".head1").toggleClass("minus");
+        $(".f-open").slideToggle("slow");
+    }
+      });
+        $(".head2").click(function(){
+              if (screen.width < 768){
+                      $(".head2").toggleClass("minus");
+        $(".f-open1").slideToggle("slow");
+    }
+      });
+          $(".head3").click(function(){
+              if (screen.width < 768){
+                      $(".head3").toggleClass("minus");
+        $(".f-open2").slideToggle("slow");
+    }
+      });
     });
 </script>
 

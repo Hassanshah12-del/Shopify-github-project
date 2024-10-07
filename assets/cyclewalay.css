@@ -5304,6 +5304,7 @@ footer.page-footer {
   background: #f4f4f4;
   margin-top: auto;
   padding-bottom: 25px;
+  padding-inline: 15px;
 }
 
 p.announcement-bar__message.h5 {
