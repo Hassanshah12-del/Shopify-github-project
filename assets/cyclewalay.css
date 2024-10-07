@@ -5547,7 +5547,7 @@ button.search__button.field__button,
 
 .product-form__input.product-form__quantity {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .product-form__input.product-form__quantity button.product-form__submit.button {
