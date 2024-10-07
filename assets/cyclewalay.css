@@ -6199,4 +6199,12 @@ body .top-head-extra p.call-no {
   margin-bottom: 15px;
 }
 
+.logo-menu-outer {
+  display: flex;
+}
+
+body .logo-menu {
+  margin-left: 0;
+}
+
 }
