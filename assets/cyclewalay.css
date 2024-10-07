@@ -6156,3 +6156,16 @@ main#MainContent {
   width: auto;
   right: 35px;
 }
+
+@media screen and (min-width:990px){
+  .for-mobile {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:989px){
+  .for-desktop {
+    display: none;
+  }
+}
