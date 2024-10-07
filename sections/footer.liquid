@@ -109,7 +109,7 @@
             </section>
 
 <script type="text/javascript">
-    require(['jquery', 'domReady!'], function ($) {
+    {% comment %} require(['jquery', 'domReady!'], function ($) { {% endcomment %}
         $('#msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef-container')
             .appendTo('#newsletter-validate-detail');
 
@@ -131,7 +131,7 @@
         $(".f-open2").slideToggle("slow");
     }
       });
-    });
+    {% comment %} }); {% endcomment %}
 </script>
 
 
