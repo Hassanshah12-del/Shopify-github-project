@@ -6172,5 +6172,9 @@ main#MainContent {
   display: none;
 }
 
+.logo-menu img.header__heading-logo {
+  object-fit: contain;
+  max-width: 148px;
+}
 
 }

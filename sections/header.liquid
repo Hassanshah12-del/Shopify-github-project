@@ -433,10 +433,12 @@
     const cartIcon = document.querySelector('.header__icon--cart');
     const logoMenuOuter = document.querySelector('.logo-menu-outer');
     const headerDrawer = document.querySelector('header-drawer');
+    const actionButtonSets = document.querySelector('.action-button-sets'); // Select the action-button-sets
+
 
     // Function to handle the cart icon positioning
     function handleCartIconPosition() {
-        if (window.matchMedia("(max-width: 768px)").matches) {
+        if (window.matchMedia("(max-width: 989px)").matches) {
             // Mobile view: append cart icon to logo-menu-outer
             if (cartIcon.parentElement !== logoMenuOuter) {
                 logoMenuOuter.append(cartIcon);
@@ -444,9 +446,9 @@
             }
         } else {
             // Desktop view: replace cart icon to its original position
-            const originalPosition = document.querySelector('.original-cart-position'); // Update with the original position's selector
-            if (originalPosition && cartIcon.parentElement === logoMenuOuter) {
-                originalPosition.append(cartIcon);
+            const repairButton = actionButtonSets.querySelector('.repair-button'); // Select the repair-button
+            if (repairButton && cartIcon.parentElement !== actionButtonSets) {
+                actionButtonSets.insertBefore(cartIcon, repairButton);
             }
         }
     }
