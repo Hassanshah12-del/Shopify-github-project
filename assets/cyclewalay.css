@@ -74,6 +74,8 @@
     padding: 0;
     margin: 6px 0;
     gap: 5px;
+    flex-wrap: wrap;
+    padding-inline: 15px;
 }
   
   .catalog-product-view .page-main {
@@ -6251,5 +6253,11 @@ body .right-product #search_mini_form fieldset.fieldset.row .control {
 #product-grid .quick-add {
   position: static;
 }
+
+body ul.shopify-tabs>li {
+  display: block;
+  padding: 1px 0px;
+}
+
 
 }
