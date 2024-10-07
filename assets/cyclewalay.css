@@ -6177,4 +6177,19 @@ main#MainContent {
   max-width: 148px;
 }
 
+.header__icons.header__icons--localization.header-localization {
+  display: block;
+}
+ 
+body .header__icons-outer .search-modal__form .search__input.field__input {
+  border-radius: 0px !important;
+  min-width: initial;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+body .header__icons-outer .search-modal__form {
+  margin-left: 0;
+}
+
 }
