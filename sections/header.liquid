@@ -432,6 +432,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     const cartIcon = document.querySelector('.header__icon--cart');
     const logoMenuOuter = document.querySelector('.logo-menu-outer');
+    const headerDrawer = document.querySelector('.header-drawer');
 
     // Function to handle the cart icon positioning
     function handleCartIconPosition() {
@@ -439,6 +440,7 @@
             // Mobile view: append cart icon to logo-menu-outer
             if (cartIcon.parentElement !== logoMenuOuter) {
                 logoMenuOuter.append(cartIcon);
+                logoMenuOuter.prepend(headerDrawer);
             }
         } else {
             // Desktop view: replace cart icon to its original position
