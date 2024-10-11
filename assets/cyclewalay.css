@@ -6325,3 +6325,13 @@ body .catalog-product-view .product-page-head {
 .ldt-cp-fixed {
   display: none;
 }
+
+
+.shopify-tabs-account-outer {
+  display: flex;
+  justify-content: center;
+  max-width: 1459px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
