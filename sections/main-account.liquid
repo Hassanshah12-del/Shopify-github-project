@@ -156,7 +156,15 @@
                     {%- if part.is_link -%}
                       <a href="{{ part.url }}" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">
                         {{- part.title -}}
-                      </a>
+                      </a><div>
+                        <h2>{{ 'customer.account.details' | t }}</h2>
+                  
+                        {{ customer.default_address | format_address }}
+                  
+                        <a href="{{ routes.account_addresses_url }}">
+                          {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
+                        </a>
+                      </div>
                     {%- else -%}
                       {%- if part.title == paginate.current_page -%}
                         <span aria-current="page" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">
@@ -183,16 +191,6 @@
           {%- endif -%}
         {%- endif -%}
       {% endpaginate %}
-    </div>
-
-    <div>
-
-
-      {{ customer.default_address | format_address }}
-
-      <a href="{{ routes.account_addresses_url }}">
-        {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
-      </a>
     </div>
   </div>
 </div>
