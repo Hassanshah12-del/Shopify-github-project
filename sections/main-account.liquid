@@ -34,6 +34,33 @@
   Returns tab content
 </div>
 
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    // Append #judgeme_product_reviews to #tab-returns when the page loads
+    const reviews = document.getElementById('judgeme_product_reviews');
+    const returnsTab = document.getElementById('tab-returns');
+
+    if (reviews && returnsTab) {
+      returnsTab.appendChild(reviews);
+    }
+
+    // Set up tab switching logic
+    const tabs = document.querySelectorAll('ul.shopify-tabs > li');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.shopify-tabs > li').forEach(t => t.classList.remove('current'));
+        document.querySelectorAll('.shopify-tab-content').forEach(c => c.classList.remove('current'));
+        this.classList.add('current');
+
+        const tabId = this.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('current');
+      });
+    });
+  });
+</script>
+
 <div class="customer account section-{{ section.id }}-padding">
   <div>
     <h1 class="customer__title">{{ 'customer.account.title' | t }}</h1>
