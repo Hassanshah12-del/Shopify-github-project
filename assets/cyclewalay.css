@@ -6352,5 +6352,6 @@ ul.shopify-tabs-account {
 
 ul.shopify-tabs-account li {
   padding-block: 5px;
+  cursor: pointer;
 }
 
