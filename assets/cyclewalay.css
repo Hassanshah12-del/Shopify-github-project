@@ -6344,3 +6344,7 @@ ul.shopify-tabs-account {
   color: #000;
 }
 
+ul.shopify-tabs-account li {
+  padding-block: 5px;
+}
+
