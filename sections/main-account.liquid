@@ -310,11 +310,11 @@
     }
 
     // Set up tab switching logic
-    const tabs = document.querySelectorAll('ul.shopify-tabs > li');
+    const tabs = document.querySelectorAll('ul.shopify-tabs-account > li');
     
     tabs.forEach(tab => {
       tab.addEventListener('click', function() {
-        document.querySelectorAll('.shopify-tabs > li').forEach(t => t.classList.remove('current'));
+        document.querySelectorAll('.shopify-tabs-account > li').forEach(t => t.classList.remove('current'));
         document.querySelectorAll('.shopify-tab-content').forEach(c => c.classList.remove('current'));
         this.classList.add('current');
 
