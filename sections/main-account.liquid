@@ -157,7 +157,14 @@
   Delivery tab content
 </div>
 <div id="tab-returns" class="shopify-tab-content">
-  Returns tab content
+  <div>
+    <a href="{{ routes.account_logout_url }}">
+      <span class="svg-wrapper">
+        {{- 'icon-account.svg' | inline_asset_content -}}
+      </span>
+      {{ 'customer.log_out' | t }}
+    </a>
+  </div>
 </div>
 
 
