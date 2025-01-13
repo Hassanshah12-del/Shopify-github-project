@@ -6362,3 +6362,7 @@ ul.shopify-tabs-account li.current {
 body h2,body .h2 {
   font-size: 26px;
 }
+
+.swym-wishlist-grid {
+  display: inline-flex;
+}
