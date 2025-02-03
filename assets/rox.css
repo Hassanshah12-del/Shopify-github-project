@@ -213,12 +213,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 } */
- 
 
-.banner__text.rte p {
+
+/* .banner__text.rte p {
     color: #fff;
     line-height: 22.4px;
-  }
+  } */
   .banner__heading.inline-richtext {
     font-size: 32px;
     color: #fff;
